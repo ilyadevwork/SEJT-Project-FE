@@ -1,0 +1,6581 @@
+{
+    "data": {
+        "techBranch": [
+            {
+                "name": "Java",
+                "remote": [
+                    {
+                        "Remote": 792
+                    },
+                    {
+                        "Temporarily remote": 151
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 4264
+                    },
+                    {
+                        "$115,000+": 3355
+                    },
+                    {
+                        "$125,000+": 2586
+                    },
+                    {
+                        "$135,000+": 1740
+                    },
+                    {
+                        "$145,000+": 1045
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 3354
+                    },
+                    {
+                        "Contract": 323
+                    },
+                    {
+                        "Part-time": 33
+                    },
+                    {
+                        "Temporary": 16
+                    },
+                    {
+                        "Internship": 6
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 2903
+                    },
+                    {
+                        "Senior Level": 1241
+                    },
+                    {
+                        "Entry Level": 599
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 3916
+                    },
+                    {
+                        "Master's degree": 1434
+                    },
+                    {
+                        "Doctoral degree": 311
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 3575
+                    },
+                    {
+                        "Jersey City, NJ": 718
+                    },
+                    {
+                        "Newark, NJ": 223
+                    },
+                    {
+                        "Hoboken, NJ": 116
+                    },
+                    {
+                        "Brooklyn, NY": 80
+                    },
+                    {
+                        "Berkeley Heights, NJ": 80
+                    },
+                    {
+                        "Parsippany, NJ": 70
+                    },
+                    {
+                        "Whippany, NJ": 69
+                    },
+                    {
+                        "Florham Park, NJ": 57
+                    },
+                    {
+                        "Weehawken, NJ": 43
+                    },
+                    {
+                        "Westbury, NY": 41
+                    },
+                    {
+                        "Manhattan, NY": 34
+                    },
+                    {
+                        "Iselin, NJ": 31
+                    },
+                    {
+                        "Franklin Lakes, NJ": 24
+                    },
+                    {
+                        "Roseland, NJ": 22
+                    }
+                ],
+                "company": [
+                    {
+                        "Amazon.com Services LLC": 637
+                    },
+                    {
+                        "Capital One": 575
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 333
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 180
+                    },
+                    {
+                        "Deloitte": 161
+                    },
+                    {
+                        "Recruiting From Scratch": 127
+                    },
+                    {
+                        "Citi": 119
+                    },
+                    {
+                        "VMware": 113
+                    },
+                    {
+                        "Bloomberg": 75
+                    },
+                    {
+                        "Fiserv, Inc.": 73
+                    },
+                    {
+                        "BNY Mellon": 71
+                    },
+                    {
+                        "Morgan Stanley": 65
+                    },
+                    {
+                        "Capgemini": 64
+                    },
+                    {
+                        "Barclays": 64
+                    },
+                    {
+                        "Facebook App": 61
+                    },
+                    {
+                        "Fiserv": 73
+                    }
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "remote": [
+                    {
+                        "Remote": 918
+                    },
+                    {
+                        "Temporarily remote": 120
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 3575
+                    },
+                    {
+                        "$110,000+": 3082
+                    },
+                    {
+                        "$125,000+": 2152
+                    },
+                    {
+                        "$135,000+": 1457
+                    },
+                    {
+                        "$145,000+": 793
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 2192
+                    },
+                    {
+                        "Contract": 277
+                    },
+                    {
+                        "Part-time": 39
+                    },
+                    {
+                        "Temporary": 31
+                    },
+                    {
+                        "Internship": 6
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 2433
+                    },
+                    {
+                        "Senior Level": 798
+                    },
+                    {
+                        "Entry Level": 443
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 2803
+                    },
+                    {
+                        "Master's degree": 778
+                    },
+                    {
+                        "Doctoral degree": 96
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 2684
+                    },
+                    {
+                        "Jersey City, NJ": 314
+                    },
+                    {
+                        "Brooklyn, NY": 166
+                    },
+                    {
+                        "Newark, NJ": 146
+                    },
+                    {
+                        "Hoboken, NJ": 134
+                    },
+                    {
+                        "Parsippany, NJ": 60
+                    },
+                    {
+                        "Westbury, NY": 55
+                    },
+                    {
+                        "Florham Park, NJ": 47
+                    },
+                    {
+                        "Berkeley Heights, NJ": 39
+                    },
+                    {
+                        "Manhattan, NY": 35
+                    },
+                    {
+                        "Whippany, NJ": 25
+                    },
+                    {
+                        "Secaucus, NJ": 23
+                    },
+                    {
+                        "Iselin, NJ": 22
+                    },
+                    {
+                        "White Plains, NY": 19
+                    },
+                    {
+                        "Woodbridge, NJ": 18
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 634
+                    },
+                    {
+                        "Recruiting From Scratch": 283
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 184
+                    },
+                    {
+                        "Deloitte": 108
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 108
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 74
+                    },
+                    {
+                        "Bloomberg": 64
+                    },
+                    {
+                        "BNY Mellon": 56
+                    },
+                    {
+                        "Facebook App": 49
+                    },
+                    {
+                        "CyberCoders": 48
+                    },
+                    {
+                        "Fiserv, Inc.": 43
+                    },
+                    {
+                        "Capgemini": 36
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 36
+                    },
+                    {
+                        "Citi": 34
+                    },
+                    {
+                        "KPMG": 32
+                    }
+                ]
+            },
+            {
+                "name": "Python",
+                "remote": [
+                    {
+                        "Remote": 939
+                    },
+                    {
+                        "Temporarily remote": 75
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$105,000+": 3607
+                    },
+                    {
+                        "$120,000+": 2920
+                    },
+                    {
+                        "$130,000+": 2244
+                    },
+                    {
+                        "$140,000+": 1511
+                    },
+                    {
+                        "$150,000+": 895
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 2124
+                    },
+                    {
+                        "Contract": 172
+                    },
+                    {
+                        "Part-time": 25
+                    },
+                    {
+                        "Temporary": 19
+                    },
+                    {
+                        "Internship": 7
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 2279
+                    },
+                    {
+                        "Senior Level": 1024
+                    },
+                    {
+                        "Entry Level": 449
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 2778
+                    },
+                    {
+                        "Master's degree": 1212
+                    },
+                    {
+                        "Doctoral degree": 420
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 2850
+                    },
+                    {
+                        "Jersey City, NJ": 318
+                    },
+                    {
+                        "Brooklyn, NY": 153
+                    },
+                    {
+                        "Hoboken, NJ": 141
+                    },
+                    {
+                        "Newark, NJ": 140
+                    },
+                    {
+                        "Florham Park, NJ": 51
+                    },
+                    {
+                        "Parsippany, NJ": 48
+                    },
+                    {
+                        "Westbury, NY": 41
+                    },
+                    {
+                        "Manhattan, NY": 34
+                    },
+                    {
+                        "Whippany, NJ": 33
+                    },
+                    {
+                        "Berkeley Heights, NJ": 31
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 20
+                    },
+                    {
+                        "North Hills, NY": 19
+                    },
+                    {
+                        "Weehawken, NJ": 19
+                    },
+                    {
+                        "Summit, NJ": 14
+                    },
+                    {
+                        "Short Hills, NJ": 14
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 552
+                    },
+                    {
+                        "Recruiting From Scratch": 324
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 180
+                    },
+                    {
+                        "Amazon.com Services LLC": 162
+                    },
+                    {
+                        "Bloomberg": 121
+                    },
+                    {
+                        "Deloitte": 119
+                    },
+                    {
+                        "VMware": 90
+                    },
+                    {
+                        "Facebook App": 57
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 57
+                    },
+                    {
+                        "Bank of America": 52
+                    },
+                    {
+                        "CyberCoders": 47
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 47
+                    },
+                    {
+                        "Morgan Stanley": 41
+                    },
+                    {
+                        "DataDog": 41
+                    },
+                    {
+                        "Two Sigma Investments, LLC.": 34
+                    }
+                ]
+            },
+            {
+                "name": "React",
+                "remote": [
+                    {
+                        "Remote": 808
+                    },
+                    {
+                        "Temporarily remote": 66
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$105,000+": 2698
+                    },
+                    {
+                        "$120,000+": 2127
+                    },
+                    {
+                        "$130,000+": 1642
+                    },
+                    {
+                        "$140,000+": 1176
+                    },
+                    {
+                        "$150,000+": 593
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 1520
+                    },
+                    {
+                        "Contract": 142
+                    },
+                    {
+                        "Temporary": 26
+                    },
+                    {
+                        "Part-time": 15
+                    },
+                    {
+                        "Internship": 6
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 1670
+                    },
+                    {
+                        "Senior Level": 623
+                    },
+                    {
+                        "Entry Level": 257
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 1912
+                    },
+                    {
+                        "Master's degree": 524
+                    },
+                    {
+                        "Doctoral degree": 54
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1977
+                    },
+                    {
+                        "Jersey City, NJ": 217
+                    },
+                    {
+                        "Brooklyn, NY": 158
+                    },
+                    {
+                        "Hoboken, NJ": 149
+                    },
+                    {
+                        "Newark, NJ": 96
+                    },
+                    {
+                        "Westbury, NY": 45
+                    },
+                    {
+                        "Parsippany, NJ": 38
+                    },
+                    {
+                        "Florham Park, NJ": 37
+                    },
+                    {
+                        "Berkeley Heights, NJ": 24
+                    },
+                    {
+                        "Manhattan, NY": 19
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 17
+                    },
+                    {
+                        "Whippany, NJ": 15
+                    },
+                    {
+                        "Jericho, NY": 13
+                    },
+                    {
+                        "Morristown, NJ": 13
+                    },
+                    {
+                        "White Plains, NY": 13
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 478
+                    },
+                    {
+                        "Recruiting From Scratch": 371
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 128
+                    },
+                    {
+                        "Amazon.com Services LLC": 112
+                    },
+                    {
+                        "Deloitte": 95
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 55
+                    },
+                    {
+                        "Fiserv, Inc.": 39
+                    },
+                    {
+                        "CyberCoders": 32
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 29
+                    },
+                    {
+                        "Bloomberg": 28
+                    },
+                    {
+                        "New Relic": 25
+                    },
+                    {
+                        "Michael Page": 21
+                    },
+                    {
+                        "KPMG": 21
+                    },
+                    {
+                        "Carta": 21
+                    },
+                    {
+                        "ADP": 21
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 112
+                    },
+                    {
+                        "Fiserv": 39
+                    }
+                ]
+            },
+            {
+                "name": "SQL",
+                "remote": [
+                    {
+                        "Remote": 469
+                    },
+                    {
+                        "Temporarily remote": 88
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 2426
+                    },
+                    {
+                        "$110,000+": 2031
+                    },
+                    {
+                        "$120,000+": 1584
+                    },
+                    {
+                        "$130,000+": 1051
+                    },
+                    {
+                        "$140,000+": 625
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 1471
+                    },
+                    {
+                        "Contract": 222
+                    },
+                    {
+                        "Part-time": 26
+                    },
+                    {
+                        "Temporary": 13
+                    },
+                    {
+                        "Internship": 4
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 1756
+                    },
+                    {
+                        "Senior Level": 621
+                    },
+                    {
+                        "Entry Level": 229
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 2073
+                    },
+                    {
+                        "Master's degree": 743
+                    },
+                    {
+                        "Doctoral degree": 67
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1606
+                    },
+                    {
+                        "Jersey City, NJ": 281
+                    },
+                    {
+                        "Hoboken, NJ": 89
+                    },
+                    {
+                        "Newark, NJ": 85
+                    },
+                    {
+                        "Brooklyn, NY": 82
+                    },
+                    {
+                        "Berkeley Heights, NJ": 65
+                    },
+                    {
+                        "Parsippany, NJ": 52
+                    },
+                    {
+                        "Edison, NJ": 43
+                    },
+                    {
+                        "Manhattan, NY": 39
+                    },
+                    {
+                        "Iselin, NJ": 37
+                    },
+                    {
+                        "Whippany, NJ": 37
+                    },
+                    {
+                        "Florham Park, NJ": 35
+                    },
+                    {
+                        "Westbury, NY": 26
+                    },
+                    {
+                        "Weehawken, NJ": 23
+                    },
+                    {
+                        "Roseland, NJ": 17
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 383
+                    },
+                    {
+                        "Recruiting From Scratch": 139
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 97
+                    },
+                    {
+                        "Deloitte": 79
+                    },
+                    {
+                        "Fiserv": 70
+                    },
+                    {
+                        "Amazon.com Services LLC": 60
+                    },
+                    {
+                        "Morgan Stanley": 39
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 39
+                    },
+                    {
+                        "Facebook App": 38
+                    },
+                    {
+                        "Apple": 36
+                    },
+                    {
+                        "Bank of America": 34
+                    },
+                    {
+                        "Everest Consulting Group": 34
+                    },
+                    {
+                        "Citi": 31
+                    },
+                    {
+                        "Michael Page": 31
+                    },
+                    {
+                        "Barclays": 28
+                    },
+                    {
+                        "Fiserv, Inc.": 70
+                    }
+                ]
+            },
+            {
+                "name": "HTML5",
+                "remote": [
+                    {
+                        "Remote": 364
+                    },
+                    {
+                        "Temporarily remote": 70
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$90,000+": 1937
+                    },
+                    {
+                        "$105,000+": 1552
+                    },
+                    {
+                        "$115,000+": 1216
+                    },
+                    {
+                        "$125,000+": 884
+                    },
+                    {
+                        "$140,000+": 397
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 1206
+                    },
+                    {
+                        "Contract": 167
+                    },
+                    {
+                        "Part-time": 30
+                    },
+                    {
+                        "Temporary": 12
+                    },
+                    {
+                        "Internship": 5
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 1378
+                    },
+                    {
+                        "Senior Level": 406
+                    },
+                    {
+                        "Entry Level": 252
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 1596
+                    },
+                    {
+                        "Master's degree": 461
+                    },
+                    {
+                        "Doctoral degree": 22
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1323
+                    },
+                    {
+                        "Jersey City, NJ": 217
+                    },
+                    {
+                        "Newark, NJ": 79
+                    },
+                    {
+                        "Brooklyn, NY": 69
+                    },
+                    {
+                        "Hoboken, NJ": 61
+                    },
+                    {
+                        "Parsippany, NJ": 34
+                    },
+                    {
+                        "Florham Park, NJ": 31
+                    },
+                    {
+                        "Berkeley Heights, NJ": 24
+                    },
+                    {
+                        "Manhattan, NY": 23
+                    },
+                    {
+                        "Westbury, NY": 21
+                    },
+                    {
+                        "Secaucus, NJ": 21
+                    },
+                    {
+                        "Iselin, NJ": 16
+                    },
+                    {
+                        "Whippany, NJ": 14
+                    },
+                    {
+                        "White Plains, NY": 13
+                    },
+                    {
+                        "Jericho, NY": 13
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 288
+                    },
+                    {
+                        "Amazon.com Services LLC": 107
+                    },
+                    {
+                        "Recruiting From Scratch": 91
+                    },
+                    {
+                        "Deloitte": 78
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 55
+                    },
+                    {
+                        "BNY Mellon": 51
+                    },
+                    {
+                        "Facebook App": 39
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 31
+                    },
+                    {
+                        "Fiserv": 29
+                    },
+                    {
+                        "Michael Page": 24
+                    },
+                    {
+                        "Citi": 23
+                    },
+                    {
+                        "Capgemini": 22
+                    },
+                    {
+                        "Moody’s": 19
+                    },
+                    {
+                        "Accenture": 18
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 17
+                    }
+                ]
+            },
+            {
+                "name": "CSS",
+                "remote": [
+                    {
+                        "Remote": 400
+                    },
+                    {
+                        "Temporarily remote": 69
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$90,000+": 1907
+                    },
+                    {
+                        "$105,000+": 1551
+                    },
+                    {
+                        "$115,000+": 1227
+                    },
+                    {
+                        "$125,000+": 896
+                    },
+                    {
+                        "$140,000+": 422
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 1172
+                    },
+                    {
+                        "Contract": 153
+                    },
+                    {
+                        "Part-time": 31
+                    },
+                    {
+                        "Temporary": 16
+                    },
+                    {
+                        "Internship": 6
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 1335
+                    },
+                    {
+                        "Senior Level": 398
+                    },
+                    {
+                        "Entry Level": 272
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 1512
+                    },
+                    {
+                        "Master's degree": 423
+                    },
+                    {
+                        "Doctoral degree": 26
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1344
+                    },
+                    {
+                        "Jersey City, NJ": 198
+                    },
+                    {
+                        "Newark, NJ": 82
+                    },
+                    {
+                        "Brooklyn, NY": 72
+                    },
+                    {
+                        "Hoboken, NJ": 56
+                    },
+                    {
+                        "Parsippany, NJ": 33
+                    },
+                    {
+                        "Florham Park, NJ": 32
+                    },
+                    {
+                        "Westbury, NY": 21
+                    },
+                    {
+                        "Long Island City, NY": 19
+                    },
+                    {
+                        "Manhattan, NY": 19
+                    },
+                    {
+                        "Secaucus, NJ": 18
+                    },
+                    {
+                        "Iselin, NJ": 16
+                    },
+                    {
+                        "Berkeley Heights, NJ": 15
+                    },
+                    {
+                        "Whippany, NJ": 12
+                    },
+                    {
+                        "White Plains, NY": 12
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 288
+                    },
+                    {
+                        "Recruiting From Scratch": 106
+                    },
+                    {
+                        "Amazon.com Services LLC": 99
+                    },
+                    {
+                        "Deloitte": 76
+                    },
+                    {
+                        "BNY Mellon": 50
+                    },
+                    {
+                        "Facebook App": 43
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 43
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 28
+                    },
+                    {
+                        "Fiserv": 23
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 23
+                    },
+                    {
+                        "CyberCoders": 20
+                    },
+                    {
+                        "Capgemini": 21
+                    },
+                    {
+                        "Moody’s": 19
+                    },
+                    {
+                        "Accenture": 19
+                    },
+                    {
+                        "CapB InfoteK": 15
+                    }
+                ]
+            },
+            {
+                "name": "C++",
+                "remote": [
+                    {
+                        "Remote": 337
+                    },
+                    {
+                        "Temporarily remote": 32
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$105,000+": 1227
+                    },
+                    {
+                        "$120,000+": 1038
+                    },
+                    {
+                        "$130,000+": 821
+                    },
+                    {
+                        "$140,000+": 558
+                    },
+                    {
+                        "$155,000+": 265
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 1453
+                    },
+                    {
+                        "Contract": 56
+                    },
+                    {
+                        "Part-time": 8
+                    },
+                    {
+                        "Internship": 2
+                    },
+                    {
+                        "Temporary": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 995
+                    },
+                    {
+                        "Senior Level": 496
+                    },
+                    {
+                        "Entry Level": 289
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 1489
+                    },
+                    {
+                        "Master's degree": 741
+                    },
+                    {
+                        "Doctoral degree": 400
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1675
+                    },
+                    {
+                        "Jersey City, NJ": 145
+                    },
+                    {
+                        "Newark, NJ": 77
+                    },
+                    {
+                        "Hoboken, NJ": 63
+                    },
+                    {
+                        "Brooklyn, NY": 55
+                    },
+                    {
+                        "Florham Park, NJ": 20
+                    },
+                    {
+                        "Clifton, NJ": 18
+                    },
+                    {
+                        "Parsippany, NJ": 15
+                    },
+                    {
+                        "Berkeley Heights, NJ": 14
+                    },
+                    {
+                        "Whippany, NJ": 9
+                    },
+                    {
+                        "Manhattan, NY": 8
+                    },
+                    {
+                        "Wayne, NJ": 8
+                    },
+                    {
+                        "Westbury, NY": 7
+                    },
+                    {
+                        "Rockleigh, NJ": 6
+                    },
+                    {
+                        "Great Neck, NY": 6
+                    }
+                ],
+                "company": [
+                    {
+                        "Amazon Web Services, Inc.": 595
+                    },
+                    {
+                        "Recruiting From Scratch": 164
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 164
+                    },
+                    {
+                        "Bloomberg": 102
+                    },
+                    {
+                        "Facebook App": 70
+                    },
+                    {
+                        "Capital One": 69
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 44
+                    },
+                    {
+                        "VMware": 36
+                    },
+                    {
+                        "Audible": 36
+                    },
+                    {
+                        "Amazon Advertising LLC": 26
+                    },
+                    {
+                        "Two Sigma Investments, LLC.": 22
+                    },
+                    {
+                        "peoplecanfly": 18
+                    },
+                    {
+                        "Salesforce": 17
+                    },
+                    {
+                        "Morgan Stanley": 17
+                    },
+                    {
+                        "Deloitte": 15
+                    },
+                    {
+                        "Amazon.com Services LLC": 595
+                    },
+                    {
+                        "People Can Fly": 18
+                    }
+                ]
+            },
+            {
+                "name": "C#",
+                "remote": [
+                    {
+                        "Remote": 190
+                    },
+                    {
+                        "Temporarily remote": 49
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$95,000+": 1185
+                    },
+                    {
+                        "$105,000+": 1026
+                    },
+                    {
+                        "$120,000+": 694
+                    },
+                    {
+                        "$125,000+": 556
+                    },
+                    {
+                        "$135,000+": 306
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 1540
+                    },
+                    {
+                        "Contract": 111
+                    },
+                    {
+                        "Part-time": 8
+                    },
+                    {
+                        "Temporary": 6
+                    },
+                    {
+                        "Internship": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 1097
+                    },
+                    {
+                        "Senior Level": 369
+                    },
+                    {
+                        "Entry Level": 239
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 1372
+                    },
+                    {
+                        "Master's degree": 487
+                    },
+                    {
+                        "Doctoral degree": 137
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1473
+                    },
+                    {
+                        "Jersey City, NJ": 180
+                    },
+                    {
+                        "Newark, NJ": 66
+                    },
+                    {
+                        "Berkeley Heights, NJ": 59
+                    },
+                    {
+                        "Parsippany, NJ": 44
+                    },
+                    {
+                        "Brooklyn, NY": 27
+                    },
+                    {
+                        "Florham Park, NJ": 25
+                    },
+                    {
+                        "Manhattan, NY": 24
+                    },
+                    {
+                        "Hoboken, NJ": 22
+                    },
+                    {
+                        "Iselin, NJ": 18
+                    },
+                    {
+                        "Whippany, NJ": 13
+                    },
+                    {
+                        "Queens, NY": 12
+                    },
+                    {
+                        "Edison, NJ": 12
+                    },
+                    {
+                        "Short Hills, NJ": 9
+                    },
+                    {
+                        "Jericho, NY": 9
+                    }
+                ],
+                "company": [
+                    {
+                        "Amazon.com Services LLC": 549
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 155
+                    },
+                    {
+                        "Fiserv, Inc.": 56
+                    },
+                    {
+                        "Deloitte": 53
+                    },
+                    {
+                        "Michael Page": 49
+                    },
+                    {
+                        "BNY Mellon": 46
+                    },
+                    {
+                        "Facebook App": 41
+                    },
+                    {
+                        "Audible": 36
+                    },
+                    {
+                        "Amazon Advertising LLC": 26
+                    },
+                    {
+                        "Bloomberg": 23
+                    },
+                    {
+                        "KPMG": 22
+                    },
+                    {
+                        "VMware": 21
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 18
+                    },
+                    {
+                        "Barclays": 17
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 16
+                    },
+                    {
+                        "Zip Co": 16
+                    }
+                ]
+            },
+            {
+                "name": "Angular",
+                "remote": [
+                    {
+                        "Remote": 261
+                    },
+                    {
+                        "Temporarily remote": 68
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$95,000+": 1645
+                    },
+                    {
+                        "$110,000+": 1297
+                    },
+                    {
+                        "$120,000+": 991
+                    },
+                    {
+                        "$130,000+": 616
+                    },
+                    {
+                        "$140,000+": 357
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 1042
+                    },
+                    {
+                        "Contract": 182
+                    },
+                    {
+                        "Part-time": 19
+                    },
+                    {
+                        "Temporary": 18
+                    },
+                    {
+                        "Internship": 6
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 981
+                    },
+                    {
+                        "Senior Level": 468
+                    },
+                    {
+                        "Entry Level": 171
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 1275
+                    },
+                    {
+                        "Master's degree": 366
+                    },
+                    {
+                        "Doctoral degree": 16
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1117
+                    },
+                    {
+                        "Jersey City, NJ": 249
+                    },
+                    {
+                        "Newark, NJ": 50
+                    },
+                    {
+                        "Parsippany, NJ": 47
+                    },
+                    {
+                        "Florham Park, NJ": 44
+                    },
+                    {
+                        "Hoboken, NJ": 39
+                    },
+                    {
+                        "Brooklyn, NY": 37
+                    },
+                    {
+                        "Berkeley Heights, NJ": 28
+                    },
+                    {
+                        "Whippany, NJ": 28
+                    },
+                    {
+                        "Jericho, NY": 15
+                    },
+                    {
+                        "Iselin, NJ": 13
+                    },
+                    {
+                        "Westbury, NY": 12
+                    },
+                    {
+                        "Morristown, NJ": 12
+                    },
+                    {
+                        "Manhattan, NY": 12
+                    },
+                    {
+                        "Woodbridge, NJ": 11
+                    },
+                    {
+                        "Secaucus, NJ": 11
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 126
+                    },
+                    {
+                        "Deloitte": 116
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 67
+                    },
+                    {
+                        "BNY Mellon": 58
+                    },
+                    {
+                        "Recruiting From Scratch": 52
+                    },
+                    {
+                        "Citi": 43
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 43
+                    },
+                    {
+                        "Fiserv": 42
+                    },
+                    {
+                        "Amazon.com Services LLC": 42
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 38
+                    },
+                    {
+                        "Capgemini": 34
+                    },
+                    {
+                        "Morgan Stanley": 32
+                    },
+                    {
+                        "CapB InfoteK": 24
+                    },
+                    {
+                        "Accenture": 24
+                    },
+                    {
+                        "Michael Page": 21
+                    }
+                ]
+            },
+            {
+                "name": "TypeScript",
+                "remote": [
+                    {
+                        "Remote": 432
+                    },
+                    {
+                        "Temporarily remote": 33
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$110,000+": 1230
+                    },
+                    {
+                        "$120,000+": 1073
+                    },
+                    {
+                        "$130,000+": 812
+                    },
+                    {
+                        "$140,000+": 533
+                    },
+                    {
+                        "$150,000+": 251
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 589
+                    },
+                    {
+                        "Contract": 54
+                    },
+                    {
+                        "Temporary": 9
+                    },
+                    {
+                        "Part-time": 3
+                    },
+                    {
+                        "Internship": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 900
+                    },
+                    {
+                        "Senior Level": 300
+                    },
+                    {
+                        "Entry Level": 126
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 823
+                    },
+                    {
+                        "Master's degree": 263
+                    },
+                    {
+                        "Doctoral degree": 24
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 945
+                    },
+                    {
+                        "Hoboken, NJ": 78
+                    },
+                    {
+                        "Brooklyn, NY": 71
+                    },
+                    {
+                        "Jersey City, NJ": 57
+                    },
+                    {
+                        "Newark, NJ": 42
+                    },
+                    {
+                        "Westbury, NY": 20
+                    },
+                    {
+                        "Parsippany, NJ": 12
+                    },
+                    {
+                        "Florham Park, NJ": 9
+                    },
+                    {
+                        "Manhattan, NY": 8
+                    },
+                    {
+                        "Whippany, NJ": 6
+                    },
+                    {
+                        "Port Washington, NY": 5
+                    },
+                    {
+                        "Iselin, NJ": 5
+                    },
+                    {
+                        "Woodbridge, NJ": 5
+                    },
+                    {
+                        "Roseland, NJ": 5
+                    },
+                    {
+                        "Morristown, NJ": 5
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 306
+                    },
+                    {
+                        "Recruiting From Scratch": 178
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 37
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 36
+                    },
+                    {
+                        "CyberCoders": 29
+                    },
+                    {
+                        "Bloomberg": 27
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 26
+                    },
+                    {
+                        "Fiserv": 19
+                    },
+                    {
+                        "Moody’s": 18
+                    },
+                    {
+                        "Michael Page": 16
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 15
+                    },
+                    {
+                        "New Relic": 14
+                    },
+                    {
+                        "IQVIA": 14
+                    },
+                    {
+                        "Deloitte": 13
+                    },
+                    {
+                        "Compass": 12
+                    },
+                    {
+                        "Amazon.com Services LLC": 26
+                    }
+                ]
+            },
+            {
+                "name": "Go",
+                "remote": [
+                    {
+                        "Remote": 346
+                    },
+                    {
+                        "Temporarily remote": 10
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$120,000+": 1184
+                    },
+                    {
+                        "$130,000+": 961
+                    },
+                    {
+                        "$135,000+": 806
+                    },
+                    {
+                        "$145,000+": 544
+                    },
+                    {
+                        "$155,000+": 294
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 542
+                    },
+                    {
+                        "Contract": 19
+                    },
+                    {
+                        "Part-time": 3
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 743
+                    },
+                    {
+                        "Senior Level": 370
+                    },
+                    {
+                        "Entry Level": 119
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 918
+                    },
+                    {
+                        "Master's degree": 452
+                    },
+                    {
+                        "Doctoral degree": 75
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 832
+                    },
+                    {
+                        "Newark, NJ": 74
+                    },
+                    {
+                        "Jersey City, NJ": 60
+                    },
+                    {
+                        "Brooklyn, NY": 37
+                    },
+                    {
+                        "Westbury, NY": 33
+                    },
+                    {
+                        "Hoboken, NJ": 17
+                    },
+                    {
+                        "Manhattan, NY": 8
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 7
+                    },
+                    {
+                        "Bronx, NY": 6
+                    },
+                    {
+                        "Short Hills, NJ": 5
+                    },
+                    {
+                        "Sunnyside, NY": 5
+                    },
+                    {
+                        "White Plains, NY": 5
+                    },
+                    {
+                        "Glen Oaks, NY": 5
+                    },
+                    {
+                        "Weehawken, NJ": 5
+                    },
+                    {
+                        "Montvale, NJ": 4
+                    },
+                    {
+                        "Floral Park, NY": 4
+                    },
+                    {
+                        "Glen Head, NY": 4
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 475
+                    },
+                    {
+                        "VMware": 68
+                    },
+                    {
+                        "Recruiting From Scratch": 62
+                    },
+                    {
+                        "DataDog": 44
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 31
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 28
+                    },
+                    {
+                        "The New York Times": 21
+                    },
+                    {
+                        "Crowdstrike": 20
+                    },
+                    {
+                        "Bloomberg": 17
+                    },
+                    {
+                        "Uber": 15
+                    },
+                    {
+                        "Deloitte": 14
+                    },
+                    {
+                        "Compass": 13
+                    },
+                    {
+                        "Indeed": 13
+                    },
+                    {
+                        "KPMG": 12
+                    },
+                    {
+                        "Shopify": 12
+                    },
+                    {
+                        "Amazon.com Services LLC": 31
+                    }
+                ]
+            },
+            {
+                "name": "Spring",
+                "remote": [
+                    {
+                        "Remote": 151
+                    },
+                    {
+                        "Temporarily remote": 69
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 1144
+                    },
+                    {
+                        "$110,000+": 941
+                    },
+                    {
+                        "$120,000+": 702
+                    },
+                    {
+                        "$125,000+": 563
+                    },
+                    {
+                        "$140,000+": 226
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 885
+                    },
+                    {
+                        "Contract": 152
+                    },
+                    {
+                        "Part-time": 9
+                    },
+                    {
+                        "Temporary": 4
+                    },
+                    {
+                        "Internship": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 668
+                    },
+                    {
+                        "Senior Level": 341
+                    },
+                    {
+                        "Entry Level": 115
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 904
+                    },
+                    {
+                        "Master's degree": 182
+                    },
+                    {
+                        "Doctoral degree": 11
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 718
+                    },
+                    {
+                        "Jersey City, NJ": 350
+                    },
+                    {
+                        "Newark, NJ": 54
+                    },
+                    {
+                        "Whippany, NJ": 27
+                    },
+                    {
+                        "Parsippany, NJ": 27
+                    },
+                    {
+                        "Hoboken, NJ": 26
+                    },
+                    {
+                        "Berkeley Heights, NJ": 21
+                    },
+                    {
+                        "Florham Park, NJ": 20
+                    },
+                    {
+                        "Franklin Lakes, NJ": 20
+                    },
+                    {
+                        "Weehawken, NJ": 19
+                    },
+                    {
+                        "Iselin, NJ": 16
+                    },
+                    {
+                        "Jericho, NY": 10
+                    },
+                    {
+                        "Brooklyn, NY": 9
+                    },
+                    {
+                        "Summit, NJ": 7
+                    },
+                    {
+                        "Edison, NJ": 6
+                    }
+                ],
+                "company": [
+                    {
+                        "JPMorgan Chase Bank, N.A.": 177
+                    },
+                    {
+                        "Deloitte": 70
+                    },
+                    {
+                        "Citi": 57
+                    },
+                    {
+                        "BNY Mellon": 39
+                    },
+                    {
+                        "Amazon.com Services LLC": 35
+                    },
+                    {
+                        "VMware": 32
+                    },
+                    {
+                        "Capgemini": 31
+                    },
+                    {
+                        "Morgan Stanley": 29
+                    },
+                    {
+                        "CapB InfoteK": 27
+                    },
+                    {
+                        "Fiserv": 25
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 24
+                    },
+                    {
+                        "Barclays": 23
+                    },
+                    {
+                        "Accenture": 18
+                    },
+                    {
+                        "Highbrow-Tech": 16
+                    },
+                    {
+                        "Audible": 13
+                    }
+                ]
+            },
+            {
+                "name": "Scala",
+                "remote": [
+                    {
+                        "Remote": 132
+                    },
+                    {
+                        "Temporarily remote": 7
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$115,000+": 640
+                    },
+                    {
+                        "$130,000+": 493
+                    },
+                    {
+                        "$135,000+": 432
+                    },
+                    {
+                        "$145,000+": 247
+                    },
+                    {
+                        "$150,000+": 174
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 374
+                    },
+                    {
+                        "Contract": 25
+                    },
+                    {
+                        "Internship": 1
+                    },
+                    {
+                        "Part-time": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 436
+                    },
+                    {
+                        "Senior Level": 237
+                    },
+                    {
+                        "Entry Level": 62
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 565
+                    },
+                    {
+                        "Master's degree": 299
+                    },
+                    {
+                        "Doctoral degree": 123
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 502
+                    },
+                    {
+                        "Jersey City, NJ": 61
+                    },
+                    {
+                        "Hoboken, NJ": 32
+                    },
+                    {
+                        "Newark, NJ": 28
+                    },
+                    {
+                        "Brooklyn, NY": 21
+                    },
+                    {
+                        "Westbury, NY": 16
+                    },
+                    {
+                        "Florham Park, NJ": 11
+                    },
+                    {
+                        "Parsippany, NJ": 11
+                    },
+                    {
+                        "Weehawken, NJ": 7
+                    },
+                    {
+                        "Glen Oaks, NY": 6
+                    },
+                    {
+                        "Manhattan, NY": 4
+                    },
+                    {
+                        "Baldwin, NY": 4
+                    },
+                    {
+                        "Whippany, NJ": 4
+                    },
+                    {
+                        "Montclair, NJ": 3
+                    },
+                    {
+                        "Cambria Heights, NY": 3
+                    },
+                    {
+                        "South Richmond Hill, NY": 3
+                    },
+                    {
+                        "Oceanside, NY": 3
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 224
+                    },
+                    {
+                        "Amazon.com Services LLC": 68
+                    },
+                    {
+                        "Recruiting From Scratch": 37
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 27
+                    },
+                    {
+                        "Apple": 26
+                    },
+                    {
+                        "Disney Streaming": 24
+                    },
+                    {
+                        "Deloitte": 23
+                    },
+                    {
+                        "Morgan Stanley": 22
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 16
+                    },
+                    {
+                        "Michael Page": 15
+                    },
+                    {
+                        "Walmart": 15
+                    },
+                    {
+                        "Crowdstrike": 14
+                    },
+                    {
+                        "Bank of America": 14
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 13
+                    },
+                    {
+                        "Citi": 13
+                    }
+                ]
+            },
+            {
+                "name": "C",
+                "remote": [
+                    {
+                        "Remote": 2643
+                    },
+                    {
+                        "Temporarily remote": 297
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 10418
+                    },
+                    {
+                        "$115,000+": 8321
+                    },
+                    {
+                        "$125,000+": 6509
+                    },
+                    {
+                        "$135,000+": 4601
+                    },
+                    {
+                        "$145,000+": 2605
+                    },
+                    {
+                        "$105,000+": 565
+                    },
+                    {
+                        "$120,000+": 488
+                    },
+                    {
+                        "$130,000+": 376
+                    },
+                    {
+                        "$150,000+": 135
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 6693
+                    },
+                    {
+                        "Contract": 731
+                    },
+                    {
+                        "Part-time": 97
+                    },
+                    {
+                        "Temporary": 70
+                    },
+                    {
+                        "Internship": 16
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 6651
+                    },
+                    {
+                        "Senior Level": 2655
+                    },
+                    {
+                        "Entry Level": 1563
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 635
+                    },
+                    {
+                        "Master's degree": 301
+                    },
+                    {
+                        "Doctoral degree": 197
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 7929
+                    },
+                    {
+                        "Jersey City, NJ": 1081
+                    },
+                    {
+                        "Newark, NJ": 476
+                    },
+                    {
+                        "Brooklyn, NY": 421
+                    },
+                    {
+                        "Hoboken, NJ": 397
+                    },
+                    {
+                        "Berkeley Heights, NJ": 187
+                    },
+                    {
+                        "Parsippany, NJ": 149
+                    },
+                    {
+                        "Westbury, NY": 132
+                    },
+                    {
+                        "Florham Park, NJ": 130
+                    },
+                    {
+                        "Whippany, NJ": 101
+                    },
+                    {
+                        "Manhattan, NY": 99
+                    },
+                    {
+                        "Edison, NJ": 85
+                    },
+                    {
+                        "Iselin, NJ": 80
+                    },
+                    {
+                        "Weehawken, NJ": 68
+                    },
+                    {
+                        "Franklin Lakes, NJ": 52
+                    },
+                    {
+                        "Clifton, NJ": 8
+                    },
+                    {
+                        "Morristown, NJ": 5
+                    },
+                    {
+                        "Metuchen, NJ": 4
+                    },
+                    {
+                        "Union, NJ": 4
+                    },
+                    {
+                        "Great Neck, NY": 4
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 1518
+                    },
+                    {
+                        "Recruiting From Scratch": 850
+                    },
+                    {
+                        "Amazon.com Services LLC": 729
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 470
+                    },
+                    {
+                        "Deloitte": 255
+                    },
+                    {
+                        "VMware": 236
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 208
+                    },
+                    {
+                        "Fiserv, Inc.": 190
+                    },
+                    {
+                        "Citi": 181
+                    },
+                    {
+                        "Bloomberg": 163
+                    },
+                    {
+                        "CyberCoders": 145
+                    },
+                    {
+                        "Michael Page": 131
+                    },
+                    {
+                        "Capgemini": 113
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 107
+                    },
+                    {
+                        "Facebook App": 106
+                    },
+                    {
+                        "CACI": 12
+                    },
+                    {
+                        "Two Sigma Investments, LLC.": 11
+                    },
+                    {
+                        "Uber": 11
+                    },
+                    {
+                        "SS&C Technologies": 11
+                    },
+                    {
+                        "Crowdstrike": 11
+                    },
+                    {
+                        "Fiserv": 17
+                    }
+                ]
+            },
+            {
+                "name": "Kotlin",
+                "remote": [
+                    {
+                        "Remote": 148
+                    },
+                    {
+                        "Temporarily remote": 7
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$110,000+": 628
+                    },
+                    {
+                        "$125,000+": 530
+                    },
+                    {
+                        "$135,000+": 414
+                    },
+                    {
+                        "$140,000+": 355
+                    },
+                    {
+                        "$155,000+": 133
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 217
+                    },
+                    {
+                        "Contract": 13
+                    },
+                    {
+                        "Internship": 1
+                    },
+                    {
+                        "Temporary": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 453
+                    },
+                    {
+                        "Senior Level": 132
+                    },
+                    {
+                        "Entry Level": 82
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 514
+                    },
+                    {
+                        "Master's degree": 224
+                    },
+                    {
+                        "Doctoral degree": 10
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 355
+                    },
+                    {
+                        "Newark, NJ": 33
+                    },
+                    {
+                        "Hoboken, NJ": 30
+                    },
+                    {
+                        "Westbury, NY": 27
+                    },
+                    {
+                        "Jersey City, NJ": 19
+                    },
+                    {
+                        "Brooklyn, NY": 18
+                    },
+                    {
+                        "Bronx, NY": 5
+                    },
+                    {
+                        "College Point, NY": 5
+                    },
+                    {
+                        "Great Neck, NY": 4
+                    },
+                    {
+                        "Cresskill, NJ": 4
+                    },
+                    {
+                        "West Hempstead, NY": 4
+                    },
+                    {
+                        "Fort Lee, NJ": 4
+                    },
+                    {
+                        "Millburn, NJ": 3
+                    },
+                    {
+                        "Berkeley Heights, NJ": 3
+                    },
+                    {
+                        "Saint Albans, NY": 3
+                    },
+                    {
+                        "Williston Park, NY": 3
+                    },
+                    {
+                        "Inwood, NY": 3
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 339
+                    },
+                    {
+                        "Recruiting From Scratch": 43
+                    },
+                    {
+                        "Fiserv": 17
+                    },
+                    {
+                        "Walmart": 17
+                    },
+                    {
+                        "Michael Page": 16
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 14
+                    },
+                    {
+                        "VMware": 11
+                    },
+                    {
+                        "Amazon.com Services LLC": 11
+                    },
+                    {
+                        "New Relic": 10
+                    },
+                    {
+                        "CyberCoders": 10
+                    },
+                    {
+                        "Gannett": 9
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 7
+                    },
+                    {
+                        "Cash App": 7
+                    },
+                    {
+                        "Deloitte": 6
+                    },
+                    {
+                        "Foursquare": 6
+                    },
+                    {
+                        "The New York Times": 6
+                    }
+                ]
+            },
+            {
+                "name": "Ruby",
+                "remote": [
+                    {
+                        "Remote": 185
+                    },
+                    {
+                        "Temporarily remote": 14
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$105,000+": 553
+                    },
+                    {
+                        "$120,000+": 458
+                    },
+                    {
+                        "$130,000+": 324
+                    },
+                    {
+                        "$135,000+": 258
+                    },
+                    {
+                        "$150,000+": 107
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 388
+                    },
+                    {
+                        "Contract": 18
+                    },
+                    {
+                        "Temporary": 6
+                    },
+                    {
+                        "Part-time": 3
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 313
+                    },
+                    {
+                        "Senior Level": 160
+                    },
+                    {
+                        "Entry Level": 88
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 392
+                    },
+                    {
+                        "Master's degree": 109
+                    },
+                    {
+                        "Doctoral degree": 32
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 522
+                    },
+                    {
+                        "Jersey City, NJ": 36
+                    },
+                    {
+                        "Newark, NJ": 27
+                    },
+                    {
+                        "Brooklyn, NY": 19
+                    },
+                    {
+                        "Florham Park, NJ": 10
+                    },
+                    {
+                        "Hoboken, NJ": 8
+                    },
+                    {
+                        "Short Hills, NJ": 7
+                    },
+                    {
+                        "North Hills, NY": 6
+                    },
+                    {
+                        "Whippany, NJ": 4
+                    },
+                    {
+                        "Secaucus, NJ": 4
+                    },
+                    {
+                        "Lyndhurst, NJ": 3
+                    },
+                    {
+                        "Roseland, NJ": 3
+                    },
+                    {
+                        "Wayne, NJ": 3
+                    },
+                    {
+                        "Iselin, NJ": 3
+                    },
+                    {
+                        "Bergenfield, NJ": 3
+                    },
+                    {
+                        "Flushing, NY": 3
+                    },
+                    {
+                        "Queens, NY": 3
+                    }
+                ],
+                "company": [
+                    {
+                        "Amazon Web Services, Inc.": 50
+                    },
+                    {
+                        "Capital One": 30
+                    },
+                    {
+                        "VMware": 27
+                    },
+                    {
+                        "Bloomberg": 16
+                    },
+                    {
+                        "KPMG": 15
+                    },
+                    {
+                        "Salesforce": 14
+                    },
+                    {
+                        "Foursquare": 14
+                    },
+                    {
+                        "DataDog": 14
+                    },
+                    {
+                        "CyberCoders": 13
+                    },
+                    {
+                        "New Relic": 13
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 13
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 12
+                    },
+                    {
+                        "BlackLine": 8
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 8
+                    },
+                    {
+                        "Michael Page": 8
+                    },
+                    {
+                        "Amazon.com Services LLC": 50
+                    }
+                ]
+            },
+            {
+                "name": "Swift",
+                "remote": [
+                    {
+                        "Remote": 91
+                    },
+                    {
+                        "Temporarily remote": 6
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$110,000+": 536
+                    },
+                    {
+                        "$125,000+": 447
+                    },
+                    {
+                        "$140,000+": 327
+                    },
+                    {
+                        "$145,000+": 160
+                    },
+                    {
+                        "$155,000+": 119
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 192
+                    },
+                    {
+                        "Contract": 7
+                    },
+                    {
+                        "Part-time": 2
+                    },
+                    {
+                        "Temporary": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 407
+                    },
+                    {
+                        "Senior Level": 99
+                    },
+                    {
+                        "Entry Level": 82
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 490
+                    },
+                    {
+                        "Master's degree": 214
+                    },
+                    {
+                        "Doctoral degree": 7
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 289
+                    },
+                    {
+                        "Newark, NJ": 32
+                    },
+                    {
+                        "Westbury, NY": 28
+                    },
+                    {
+                        "Brooklyn, NY": 15
+                    },
+                    {
+                        "Hoboken, NJ": 11
+                    },
+                    {
+                        "Jersey City, NJ": 9
+                    },
+                    {
+                        "Florham Park, NJ": 6
+                    },
+                    {
+                        "Berkeley Heights, NJ": 6
+                    },
+                    {
+                        "Queens, NY": 5
+                    },
+                    {
+                        "Bronx, NY": 5
+                    },
+                    {
+                        "College Point, NY": 5
+                    },
+                    {
+                        "Manhattan, NY": 5
+                    },
+                    {
+                        "West Hempstead, NY": 4
+                    },
+                    {
+                        "Cresskill, NJ": 4
+                    },
+                    {
+                        "Great Neck, NY": 4
+                    },
+                    {
+                        "Fort Lee, NJ": 4
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 339
+                    },
+                    {
+                        "Michael Page": 32
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 20
+                    },
+                    {
+                        "Apple": 18
+                    },
+                    {
+                        "Recruiting From Scratch": 16
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 10
+                    },
+                    {
+                        "Fiserv": 7
+                    },
+                    {
+                        "Deloitte": 6
+                    },
+                    {
+                        "Shopify": 6
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 6
+                    },
+                    {
+                        "CyberCoders": 6
+                    },
+                    {
+                        "IQVIA": 5
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 5
+                    },
+                    {
+                        "Stytch": 5
+                    },
+                    {
+                        "Notion": 4
+                    }
+                ]
+            },
+            {
+                "name": "PHP",
+                "remote": [
+                    {
+                        "Remote": 138
+                    },
+                    {
+                        "Temporarily remote": 9
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$80,000+": 463
+                    },
+                    {
+                        "$100,000+": 386
+                    },
+                    {
+                        "$110,000+": 297
+                    },
+                    {
+                        "$120,000+": 208
+                    },
+                    {
+                        "$130,000+": 125
+                    },
+                    {
+                        "$135,000+": 91
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 286
+                    },
+                    {
+                        "Contract": 31
+                    },
+                    {
+                        "Part-time": 8
+                    },
+                    {
+                        "Temporary": 4
+                    },
+                    {
+                        "Internship": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 286
+                    },
+                    {
+                        "Entry Level": 109
+                    },
+                    {
+                        "Senior Level": 69
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 300
+                    },
+                    {
+                        "Master's degree": 82
+                    },
+                    {
+                        "Doctoral degree": 6
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 356
+                    },
+                    {
+                        "Brooklyn, NY": 34
+                    },
+                    {
+                        "Jersey City, NJ": 26
+                    },
+                    {
+                        "Newark, NJ": 18
+                    },
+                    {
+                        "Hoboken, NJ": 11
+                    },
+                    {
+                        "Parsippany, NJ": 10
+                    },
+                    {
+                        "Manhattan, NY": 8
+                    },
+                    {
+                        "Florham Park, NJ": 7
+                    },
+                    {
+                        "Whippany, NJ": 6
+                    },
+                    {
+                        "Woodbridge, NJ": 5
+                    },
+                    {
+                        "North Hills, NY": 4
+                    },
+                    {
+                        "New Providence, NJ": 4
+                    },
+                    {
+                        "Staten Island, NY": 3
+                    },
+                    {
+                        "Secaucus, NJ": 3
+                    },
+                    {
+                        "White Plains, NY": 3
+                    },
+                    {
+                        "Yonkers, NY": 3
+                    }
+                ],
+                "company": [
+                    {
+                        "Facebook App": 52
+                    },
+                    {
+                        "Deloitte": 25
+                    },
+                    {
+                        "Etsy": 15
+                    },
+                    {
+                        "Shopify": 12
+                    },
+                    {
+                        "Aya Corporate": 10
+                    },
+                    {
+                        "Recruiting From Scratch": 10
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 8
+                    },
+                    {
+                        "Michael Page": 8
+                    },
+                    {
+                        "AT&T": 8
+                    },
+                    {
+                        "NBCUniversal": 8
+                    },
+                    {
+                        "Robert Half": 8
+                    },
+                    {
+                        "Digital Pulp": 7
+                    },
+                    {
+                        "Gannett": 7
+                    },
+                    {
+                        "Layer 7 Data Solutions": 6
+                    },
+                    {
+                        "Amazon.com Services LLC": 6
+                    },
+                    {
+                        "Vimeo": 6
+                    }
+                ]
+            },
+            {
+                "name": "jQuery",
+                "remote": [
+                    {
+                        "Remote": 65
+                    },
+                    {
+                        "Temporarily remote": 13
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$85,000+": 428
+                    },
+                    {
+                        "$100,000+": 344
+                    },
+                    {
+                        "$105,000+": 298
+                    },
+                    {
+                        "$120,000+": 169
+                    },
+                    {
+                        "$130,000+": 90
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 305
+                    },
+                    {
+                        "Contract": 85
+                    },
+                    {
+                        "Part-time": 12
+                    },
+                    {
+                        "Internship": 5
+                    },
+                    {
+                        "Temporary": 5
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 269
+                    },
+                    {
+                        "Senior Level": 118
+                    },
+                    {
+                        "Entry Level": 75
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 321
+                    },
+                    {
+                        "Master's degree": 60
+                    },
+                    {
+                        "Doctoral degree": 3
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 275
+                    },
+                    {
+                        "Jersey City, NJ": 62
+                    },
+                    {
+                        "Brooklyn, NY": 23
+                    },
+                    {
+                        "Newark, NJ": 16
+                    },
+                    {
+                        "Whippany, NJ": 14
+                    },
+                    {
+                        "Florham Park, NJ": 10
+                    },
+                    {
+                        "Hoboken, NJ": 9
+                    },
+                    {
+                        "Iselin, NJ": 9
+                    },
+                    {
+                        "Manhattan, NY": 8
+                    },
+                    {
+                        "Clark, NJ": 7
+                    },
+                    {
+                        "Queens, NY": 7
+                    },
+                    {
+                        "Staten Island, NY": 6
+                    },
+                    {
+                        "White Plains, NY": 6
+                    },
+                    {
+                        "Ridgefield Park, NJ": 5
+                    },
+                    {
+                        "Edison, NJ": 4
+                    }
+                ],
+                "company": [
+                    {
+                        "Amazon.com Services LLC": 26
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 12
+                    },
+                    {
+                        "Michael Page": 8
+                    },
+                    {
+                        "NYC Careers": 8
+                    },
+                    {
+                        "Capgemini": 7
+                    },
+                    {
+                        "ISO": 7
+                    },
+                    {
+                        "UNIVERSAL Technologies": 7
+                    },
+                    {
+                        "CapB InfoteK": 6
+                    },
+                    {
+                        "Wells Fargo": 6
+                    },
+                    {
+                        "BNY Mellon": 6
+                    },
+                    {
+                        "Layer 7 Data Solutions": 6
+                    },
+                    {
+                        "Barclays": 5
+                    },
+                    {
+                        "Bank of America": 5
+                    },
+                    {
+                        "Nb Ventures Inc": 5
+                    },
+                    {
+                        "Woongjin, Inc": 5
+                    },
+                    {
+                        "Deloitte": 5
+                    }
+                ]
+            },
+            {
+                "name": "Vue.js",
+                "remote": [
+                    {
+                        "Remote": 134
+                    },
+                    {
+                        "Temporarily remote": 9
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 347
+                    },
+                    {
+                        "$110,000+": 289
+                    },
+                    {
+                        "$120,000+": 226
+                    },
+                    {
+                        "$130,000+": 145
+                    },
+                    {
+                        "$140,000+": 83
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 251
+                    },
+                    {
+                        "Contract": 21
+                    },
+                    {
+                        "Temporary": 10
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 219
+                    },
+                    {
+                        "Senior Level": 98
+                    },
+                    {
+                        "Entry Level": 46
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 225
+                    },
+                    {
+                        "Master's degree": 69
+                    },
+                    {
+                        "Doctoral degree": 5
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 331
+                    },
+                    {
+                        "Jersey City, NJ": 22
+                    },
+                    {
+                        "Hoboken, NJ": 14
+                    },
+                    {
+                        "Brooklyn, NY": 14
+                    },
+                    {
+                        "Long Island City, NY": 10
+                    },
+                    {
+                        "Florham Park, NJ": 9
+                    },
+                    {
+                        "Manhattan, NY": 7
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 5
+                    },
+                    {
+                        "Woodbridge, NJ": 4
+                    },
+                    {
+                        "Pearl River, NY": 3
+                    },
+                    {
+                        "Westbury, NY": 3
+                    },
+                    {
+                        "Newark, NJ": 3
+                    },
+                    {
+                        "New Providence, NJ": 3
+                    },
+                    {
+                        "Secaucus, NJ": 3
+                    },
+                    {
+                        "Maplewood, NJ": 2
+                    },
+                    {
+                        "Union, NJ": 2
+                    },
+                    {
+                        "Weehawken, NJ": 2
+                    }
+                ],
+                "company": [
+                    {
+                        "Recruiting From Scratch": 32
+                    },
+                    {
+                        "Michael Page": 16
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 12
+                    },
+                    {
+                        "Robert Half": 11
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 11
+                    },
+                    {
+                        "Compass": 11
+                    },
+                    {
+                        "Amazon.com Services LLC": 11
+                    },
+                    {
+                        "Deloitte": 9
+                    },
+                    {
+                        "Macy’s": 9
+                    },
+                    {
+                        "CyberCoders": 8
+                    },
+                    {
+                        "NBCUniversal": 7
+                    },
+                    {
+                        "Citi": 7
+                    },
+                    {
+                        "SS&C Technologies": 6
+                    },
+                    {
+                        "VMware": 5
+                    },
+                    {
+                        "BlackLine": 5
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 11
+                    }
+                ]
+            },
+            {
+                "name": "Django",
+                "remote": [
+                    {
+                        "Remote": 144
+                    },
+                    {
+                        "Temporarily remote": 3
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$105,000+": 337
+                    },
+                    {
+                        "$120,000+": 272
+                    },
+                    {
+                        "$130,000+": 216
+                    },
+                    {
+                        "$140,000+": 144
+                    },
+                    {
+                        "$150,000+": 74
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 195
+                    },
+                    {
+                        "Contract": 26
+                    },
+                    {
+                        "Part-time": 7
+                    },
+                    {
+                        "Temporary": 4
+                    },
+                    {
+                        "Internship": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 180
+                    },
+                    {
+                        "Senior Level": 88
+                    },
+                    {
+                        "Entry Level": 40
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 192
+                    },
+                    {
+                        "Master's degree": 60
+                    },
+                    {
+                        "Doctoral degree": 16
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 274
+                    },
+                    {
+                        "Brooklyn, NY": 28
+                    },
+                    {
+                        "Jersey City, NJ": 19
+                    },
+                    {
+                        "Hoboken, NJ": 17
+                    },
+                    {
+                        "Newark, NJ": 11
+                    },
+                    {
+                        "North Hills, NY": 10
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 8
+                    },
+                    {
+                        "Parsippany, NJ": 6
+                    },
+                    {
+                        "Berkeley Heights, NJ": 4
+                    },
+                    {
+                        "Manhattan, NY": 3
+                    },
+                    {
+                        "New Hyde Park, NY": 3
+                    },
+                    {
+                        "Iselin, NJ": 2
+                    },
+                    {
+                        "Fort Lee, NJ": 2
+                    },
+                    {
+                        "Perth Amboy, NJ": 2
+                    },
+                    {
+                        "Troy Hills, NJ": 2
+                    },
+                    {
+                        "Yonkers, NY": 2
+                    },
+                    {
+                        "New Rochelle, NY": 2
+                    }
+                ],
+                "company": [
+                    {
+                        "Recruiting From Scratch": 80
+                    },
+                    {
+                        "Deloitte": 24
+                    },
+                    {
+                        "CyberCoders": 18
+                    },
+                    {
+                        "Moody’s": 12
+                    },
+                    {
+                        "Cox Automotive": 10
+                    },
+                    {
+                        "Aya Corporate": 10
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 7
+                    },
+                    {
+                        "Carta": 7
+                    },
+                    {
+                        "Invitae": 6
+                    },
+                    {
+                        "VMware": 5
+                    },
+                    {
+                        "Cedar Inc": 5
+                    },
+                    {
+                        "OwnBackup": 5
+                    },
+                    {
+                        "Bloomberg": 4
+                    },
+                    {
+                        "EquityZen": 4
+                    },
+                    {
+                        "Blue Apron": 3
+                    },
+                    {
+                        "DataAxxis": 3
+                    },
+                    {
+                        "stackbuilders": 3
+                    }
+                ]
+            },
+            {
+                "name": "Perl",
+                "remote": [
+                    {
+                        "Remote": 40
+                    },
+                    {
+                        "Temporarily remote": 11
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 275
+                    },
+                    {
+                        "$110,000+": 233
+                    },
+                    {
+                        "$120,000+": 177
+                    },
+                    {
+                        "$130,000+": 107
+                    },
+                    {
+                        "$140,000+": 52
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 250
+                    },
+                    {
+                        "Contract": 20
+                    },
+                    {
+                        "Part-time": 3
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 218
+                    },
+                    {
+                        "Senior Level": 81
+                    },
+                    {
+                        "Entry Level": 38
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 295
+                    },
+                    {
+                        "Master's degree": 79
+                    },
+                    {
+                        "Doctoral degree": 15
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 232
+                    },
+                    {
+                        "Jersey City, NJ": 56
+                    },
+                    {
+                        "Newark, NJ": 16
+                    },
+                    {
+                        "Edison, NJ": 15
+                    },
+                    {
+                        "Berkeley Heights, NJ": 12
+                    },
+                    {
+                        "Florham Park, NJ": 10
+                    },
+                    {
+                        "Whippany, NJ": 8
+                    },
+                    {
+                        "Weehawken, NJ": 6
+                    },
+                    {
+                        "Summit, NJ": 4
+                    },
+                    {
+                        "Secaucus, NJ": 2
+                    },
+                    {
+                        "Westbury, NY": 2
+                    },
+                    {
+                        "Bergenfield, NJ": 2
+                    },
+                    {
+                        "Elmwood Park, NJ": 2
+                    },
+                    {
+                        "Rahway, NJ": 2
+                    },
+                    {
+                        "Iselin, NJ": 2
+                    },
+                    {
+                        "Flushing, NY": 2
+                    },
+                    {
+                        "Upper Saddle River, NJ": 2
+                    },
+                    {
+                        "Hoboken, NJ": 2
+                    }
+                ],
+                "company": [
+                    {
+                        "Amazon.com Services LLC": 75
+                    },
+                    {
+                        "Capital One": 30
+                    },
+                    {
+                        "Morgan Stanley": 18
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 15
+                    },
+                    {
+                        "Everest Consulting Group": 15
+                    },
+                    {
+                        "Fiserv, Inc.": 12
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 10
+                    },
+                    {
+                        "CapB InfoteK": 8
+                    },
+                    {
+                        "Bank of America": 8
+                    },
+                    {
+                        "Indeed": 8
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 8
+                    },
+                    {
+                        "Barclays": 6
+                    },
+                    {
+                        "S&P Global": 5
+                    },
+                    {
+                        "BNY Mellon": 5
+                    },
+                    {
+                        "Wells Fargo": 5
+                    },
+                    {
+                        "Fiserv": 12
+                    }
+                ]
+            },
+            {
+                "name": "ASP.NET",
+                "remote": [
+                    {
+                        "Remote": 33
+                    },
+                    {
+                        "Temporarily remote": 27
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$90,000+": 332
+                    },
+                    {
+                        "$100,000+": 276
+                    },
+                    {
+                        "$110,000+": 212
+                    },
+                    {
+                        "$120,000+": 133
+                    },
+                    {
+                        "$125,000+": 94
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 240
+                    },
+                    {
+                        "Contract": 61
+                    },
+                    {
+                        "Part-time": 7
+                    },
+                    {
+                        "Temporary": 3
+                    },
+                    {
+                        "Internship": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 185
+                    },
+                    {
+                        "Senior Level": 93
+                    },
+                    {
+                        "Entry Level": 53
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 248
+                    },
+                    {
+                        "Master's degree": 59
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 166
+                    },
+                    {
+                        "Berkeley Heights, NJ": 35
+                    },
+                    {
+                        "Jersey City, NJ": 35
+                    },
+                    {
+                        "Parsippany, NJ": 18
+                    },
+                    {
+                        "Edison, NJ": 15
+                    },
+                    {
+                        "Iselin, NJ": 9
+                    },
+                    {
+                        "Newark, NJ": 9
+                    },
+                    {
+                        "Florham Park, NJ": 9
+                    },
+                    {
+                        "Jericho, NY": 7
+                    },
+                    {
+                        "Clark, NJ": 6
+                    },
+                    {
+                        "Long Island City, NY": 6
+                    },
+                    {
+                        "Manhattan, NY": 6
+                    },
+                    {
+                        "Metuchen, NJ": 5
+                    },
+                    {
+                        "Port Washington, NY": 5
+                    },
+                    {
+                        "Hoboken, NJ": 5
+                    }
+                ],
+                "company": [
+                    {
+                        "Fiserv": 35
+                    },
+                    {
+                        "Deloitte": 15
+                    },
+                    {
+                        "Everest Consulting Group": 9
+                    },
+                    {
+                        "ISO": 8
+                    },
+                    {
+                        "Bank of America": 7
+                    },
+                    {
+                        "Wells Fargo": 6
+                    },
+                    {
+                        "Softnice Inc": 6
+                    },
+                    {
+                        "CapB InfoteK": 6
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 6
+                    },
+                    {
+                        "UNIVERSAL Technologies": 6
+                    },
+                    {
+                        "Cognizant Technology Solutions": 5
+                    },
+                    {
+                        "Radancy": 5
+                    },
+                    {
+                        "Capgemini": 5
+                    },
+                    {
+                        "Nb Ventures Inc": 4
+                    },
+                    {
+                        "Memorial Sloan Kettering Cancer Center": 4
+                    },
+                    {
+                        "New York Life Insurance Co": 4
+                    },
+                    {
+                        "NYC Careers": 4
+                    }
+                ]
+            },
+            {
+                "name": "PowerShell",
+                "remote": [
+                    {
+                        "Remote": 40
+                    },
+                    {
+                        "Temporarily remote": 2
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$90,000+": 190
+                    },
+                    {
+                        "$105,000+": 157
+                    },
+                    {
+                        "$120,000+": 114
+                    },
+                    {
+                        "$125,000+": 91
+                    },
+                    {
+                        "$135,000+": 46
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 119
+                    },
+                    {
+                        "Contract": 15
+                    },
+                    {
+                        "Part-time": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 112
+                    },
+                    {
+                        "Senior Level": 53
+                    },
+                    {
+                        "Entry Level": 26
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 165
+                    },
+                    {
+                        "Master's degree": 37
+                    },
+                    {
+                        "Doctoral degree": 5
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 120
+                    },
+                    {
+                        "Jersey City, NJ": 30
+                    },
+                    {
+                        "Florham Park, NJ": 16
+                    },
+                    {
+                        "Berkeley Heights, NJ": 12
+                    },
+                    {
+                        "Hoboken, NJ": 10
+                    },
+                    {
+                        "Newark, NJ": 9
+                    },
+                    {
+                        "Short Hills, NJ": 5
+                    },
+                    {
+                        "Whippany, NJ": 5
+                    },
+                    {
+                        "Manhattan, NY": 4
+                    },
+                    {
+                        "Secaucus, NJ": 3
+                    },
+                    {
+                        "Brooklyn, NY": 3
+                    },
+                    {
+                        "Iselin, NJ": 3
+                    },
+                    {
+                        "Woodbridge, NJ": 3
+                    },
+                    {
+                        "Queens, NY": 2
+                    },
+                    {
+                        "Parsippany, NJ": 2
+                    },
+                    {
+                        "Long Island City, NY": 2
+                    },
+                    {
+                        "Staten Island, NY": 2
+                    }
+                ],
+                "company": [
+                    {
+                        "PRICE WATERHOUSE COOPERS": 32
+                    },
+                    {
+                        "Fiserv": 12
+                    },
+                    {
+                        "KPMG": 11
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 8
+                    },
+                    {
+                        "Deloitte": 5
+                    },
+                    {
+                        "EY": 4
+                    },
+                    {
+                        "ANSYS": 4
+                    },
+                    {
+                        "Prudential": 4
+                    },
+                    {
+                        "Broadridge": 4
+                    },
+                    {
+                        "Change Healthcare": 4
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 4
+                    },
+                    {
+                        "Avi web solutions": 3
+                    },
+                    {
+                        "Amex": 3
+                    },
+                    {
+                        "ZT Systems": 3
+                    },
+                    {
+                        "Booz Allen Hamilton": 3
+                    },
+                    {
+                        "Fiserv, Inc.": 12
+                    },
+                    {
+                        "Walmart": 3
+                    }
+                ]
+            },
+            {
+                "name": "Flask",
+                "remote": [
+                    {
+                        "Remote": 70
+                    },
+                    {
+                        "Temporarily remote": 1
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$110,000+": 175
+                    },
+                    {
+                        "$125,000+": 144
+                    },
+                    {
+                        "$135,000+": 110
+                    },
+                    {
+                        "$145,000+": 69
+                    },
+                    {
+                        "$155,000+": 35
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 82
+                    },
+                    {
+                        "Contract": 14
+                    },
+                    {
+                        "Temporary": 5
+                    },
+                    {
+                        "Part-time": 3
+                    },
+                    {
+                        "Internship": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 105
+                    },
+                    {
+                        "Senior Level": 42
+                    },
+                    {
+                        "Entry Level": 17
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 93
+                    },
+                    {
+                        "Master's degree": 30
+                    },
+                    {
+                        "Doctoral degree": 5
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 152
+                    },
+                    {
+                        "Brooklyn, NY": 17
+                    },
+                    {
+                        "Jersey City, NJ": 8
+                    },
+                    {
+                        "Newark, NJ": 7
+                    },
+                    {
+                        "Hoboken, NJ": 7
+                    },
+                    {
+                        "Berkeley Heights, NJ": 5
+                    },
+                    {
+                        "Roseland, NJ": 2
+                    },
+                    {
+                        "Lyndhurst, NJ": 1
+                    },
+                    {
+                        "Manhattan, NY": 1
+                    },
+                    {
+                        "Woodbridge, NJ": 1
+                    },
+                    {
+                        "Short Hills, NJ": 1
+                    },
+                    {
+                        "Iselin, NJ": 1
+                    },
+                    {
+                        "Parsippany, NJ": 1
+                    },
+                    {
+                        "Hasbrouck Heights, NJ": 1
+                    },
+                    {
+                        "Wayne, NJ": 1
+                    },
+                    {
+                        "Westbury, NY": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Recruiting From Scratch": 42
+                    },
+                    {
+                        "Moody’s": 12
+                    },
+                    {
+                        "CyberCoders": 7
+                    },
+                    {
+                        "Deloitte": 6
+                    },
+                    {
+                        "Bloomberg": 6
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 5
+                    },
+                    {
+                        "Robert Half": 4
+                    },
+                    {
+                        "Analytic Partners": 4
+                    },
+                    {
+                        "Invitae": 4
+                    },
+                    {
+                        "Grow Therapy": 4
+                    },
+                    {
+                        "Trood": 3
+                    },
+                    {
+                        "Butterfly Network": 3
+                    },
+                    {
+                        "Prudential": 3
+                    },
+                    {
+                        "Funnel Leasing": 3
+                    },
+                    {
+                        "Fiserv": 3
+                    }
+                ]
+            },
+            {
+                "name": "Objective-C",
+                "remote": [
+                    {
+                        "Remote": 44
+                    },
+                    {
+                        "Temporarily remote": 3
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$105,000+": 122
+                    },
+                    {
+                        "$115,000+": 103
+                    },
+                    {
+                        "$125,000+": 84
+                    },
+                    {
+                        "$135,000+": 52
+                    },
+                    {
+                        "$145,000+": 26
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 123
+                    },
+                    {
+                        "Contract": 5
+                    },
+                    {
+                        "Part-time": 1
+                    },
+                    {
+                        "Temporary": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 108
+                    },
+                    {
+                        "Entry Level": 31
+                    },
+                    {
+                        "Senior Level": 23
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 113
+                    },
+                    {
+                        "Master's degree": 32
+                    },
+                    {
+                        "Doctoral degree": 12
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 143
+                    },
+                    {
+                        "Jersey City, NJ": 15
+                    },
+                    {
+                        "Brooklyn, NY": 8
+                    },
+                    {
+                        "Hoboken, NJ": 4
+                    },
+                    {
+                        "Berkeley Heights, NJ": 3
+                    },
+                    {
+                        "Newark, NJ": 3
+                    },
+                    {
+                        "Florham Park, NJ": 2
+                    },
+                    {
+                        "Parsippany, NJ": 2
+                    },
+                    {
+                        "Bergenfield, NJ": 1
+                    },
+                    {
+                        "Greenvale, NY": 1
+                    },
+                    {
+                        "Madison, NJ": 1
+                    },
+                    {
+                        "Whippany, NJ": 1
+                    },
+                    {
+                        "Moonachie, NJ": 1
+                    },
+                    {
+                        "Castleton Corners, NY": 1
+                    },
+                    {
+                        "Elmsford, NY": 1
+                    },
+                    {
+                        "Jackson Heights, NY": 1
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 1
+                    },
+                    {
+                        "Convent Station, NJ": 1
+                    },
+                    {
+                        "Manhattan, NY": 1
+                    },
+                    {
+                        "Union, NJ": 1
+                    },
+                    {
+                        "Cresskill, NJ": 1
+                    },
+                    {
+                        "Westbury, NY": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Amazon.com Services LLC": 26
+                    },
+                    {
+                        "Apple": 16
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 11
+                    },
+                    {
+                        "Recruiting From Scratch": 11
+                    },
+                    {
+                        "IQVIA": 5
+                    },
+                    {
+                        "Uber": 5
+                    },
+                    {
+                        "Snapchat": 4
+                    },
+                    {
+                        "Facebook App": 4
+                    },
+                    {
+                        "Softnice Inc": 3
+                    },
+                    {
+                        "Audible": 3
+                    },
+                    {
+                        "Fiserv": 3
+                    },
+                    {
+                        "Deloitte": 3
+                    },
+                    {
+                        "Gannett": 3
+                    },
+                    {
+                        "Etsy": 3
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 3
+                    }
+                ]
+            },
+            {
+                "name": "R",
+                "remote": [
+                    {
+                        "Remote": 13
+                    },
+                    {
+                        "Temporarily remote": 1
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$95,000+": 112
+                    },
+                    {
+                        "$110,000+": 88
+                    },
+                    {
+                        "$120,000+": 66
+                    },
+                    {
+                        "$130,000+": 45
+                    },
+                    {
+                        "$140,000+": 29
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 89
+                    },
+                    {
+                        "Contract": 4
+                    },
+                    {
+                        "Part-time": 2
+                    },
+                    {
+                        "Temporary": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 84
+                    },
+                    {
+                        "Senior Level": 25
+                    },
+                    {
+                        "Entry Level": 13
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 79
+                    },
+                    {
+                        "Master's degree": 46
+                    },
+                    {
+                        "Doctoral degree": 10
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 98
+                    },
+                    {
+                        "Jersey City, NJ": 12
+                    },
+                    {
+                        "Parsippany, NJ": 10
+                    },
+                    {
+                        "Manhattan, NY": 6
+                    },
+                    {
+                        "Hoboken, NJ": 3
+                    },
+                    {
+                        "Rahway, NJ": 3
+                    },
+                    {
+                        "Madison, NJ": 2
+                    },
+                    {
+                        "Elmwood Park, NJ": 1
+                    },
+                    {
+                        "Palisades, NY": 1
+                    },
+                    {
+                        "Summit, NJ": 1
+                    },
+                    {
+                        "Wayne, NJ": 1
+                    },
+                    {
+                        "Weehawken, NJ": 1
+                    },
+                    {
+                        "Hicksville, NY": 1
+                    },
+                    {
+                        "Teaneck, NJ": 1
+                    },
+                    {
+                        "Newark, NJ": 1
+                    },
+                    {
+                        "Sleepy Hollow, NY": 1
+                    },
+                    {
+                        "Paramus, NJ": 1
+                    },
+                    {
+                        "Short Hills, NJ": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Deloitte": 21
+                    },
+                    {
+                        "S&P Global": 6
+                    },
+                    {
+                        "Moody’s": 6
+                    },
+                    {
+                        "Amazon Advertising LLC": 4
+                    },
+                    {
+                        "Analytic Partners": 4
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 4
+                    },
+                    {
+                        "Merck": 4
+                    },
+                    {
+                        "DataDog": 3
+                    },
+                    {
+                        "CEDENT": 3
+                    },
+                    {
+                        "Codecademy": 3
+                    },
+                    {
+                        "NYU Langone": 3
+                    },
+                    {
+                        "Amazon.com Services LLC": 3
+                    },
+                    {
+                        "Citi": 3
+                    },
+                    {
+                        "Walmart": 2
+                    },
+                    {
+                        "Visiting Nurse Service of New York": 2
+                    },
+                    {
+                        "New Relic": 2
+                    },
+                    {
+                        "Major League Baseball": 2
+                    }
+                ]
+            },
+            {
+                "name": "Rust",
+                "remote": [
+                    {
+                        "Remote": 54
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$125,000+": 96
+                    },
+                    {
+                        "$130,000+": 92
+                    },
+                    {
+                        "$140,000+": 63
+                    },
+                    {
+                        "$145,000+": 53
+                    },
+                    {
+                        "$155,000+": 20
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 61
+                    },
+                    {
+                        "Contract": 6
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 60
+                    },
+                    {
+                        "Senior Level": 27
+                    },
+                    {
+                        "Entry Level": 26
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 56
+                    },
+                    {
+                        "Master's degree": 35
+                    },
+                    {
+                        "Doctoral degree": 12
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 105
+                    },
+                    {
+                        "Brooklyn, NY": 12
+                    },
+                    {
+                        "Hoboken, NJ": 6
+                    },
+                    {
+                        "Jersey City, NJ": 3
+                    },
+                    {
+                        "Berkeley Heights, NJ": 3
+                    },
+                    {
+                        "Manhattan, NY": 1
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Recruiting From Scratch": 31
+                    },
+                    {
+                        "Materialize": 7
+                    },
+                    {
+                        "DataDog": 7
+                    },
+                    {
+                        "Amazon.com Services LLC": 6
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 4
+                    },
+                    {
+                        "Kraken Digital Asset Exchange": 3
+                    },
+                    {
+                        "Human Security": 3
+                    },
+                    {
+                        "Change Healthcare": 3
+                    },
+                    {
+                        "Brace": 3
+                    },
+                    {
+                        "VMware": 3
+                    },
+                    {
+                        "Fiserv": 3
+                    },
+                    {
+                        "BlackLine": 3
+                    },
+                    {
+                        "The New York Times": 3
+                    },
+                    {
+                        "Sidewalk Labs": 2
+                    },
+                    {
+                        "Two Sigma Investments, LLC.": 2
+                    },
+                    {
+                        "Disney Streaming": 2
+                    },
+                    {
+                        "Chronosphere": 2
+                    },
+                    {
+                        "Stellar Development Foundation": 2
+                    }
+                ]
+            },
+            {
+                "name": "Drupal",
+                "remote": [
+                    {
+                        "Remote": 17
+                    },
+                    {
+                        "Temporarily remote": 3
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$80,000+": 84
+                    },
+                    {
+                        "$85,000+": 75
+                    },
+                    {
+                        "$100,000+": 53
+                    },
+                    {
+                        "$110,000+": 40
+                    },
+                    {
+                        "$120,000+": 19
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 62
+                    },
+                    {
+                        "Contract": 10
+                    },
+                    {
+                        "Part-time": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 69
+                    },
+                    {
+                        "Senior Level": 11
+                    },
+                    {
+                        "Entry Level": 8
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 61
+                    },
+                    {
+                        "Master's degree": 9
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 62
+                    },
+                    {
+                        "Newark, NJ": 9
+                    },
+                    {
+                        "Jersey City, NJ": 6
+                    },
+                    {
+                        "Parsippany, NJ": 5
+                    },
+                    {
+                        "Brooklyn, NY": 4
+                    },
+                    {
+                        "Manhattan, NY": 2
+                    },
+                    {
+                        "Paramus, NJ": 2
+                    },
+                    {
+                        "White Plains, NY": 2
+                    },
+                    {
+                        "Perth Amboy, NJ": 1
+                    },
+                    {
+                        "Hempstead, NY": 1
+                    },
+                    {
+                        "Franklin Lakes, NJ": 1
+                    },
+                    {
+                        "Palisades, NY": 1
+                    },
+                    {
+                        "Woodbridge, NJ": 1
+                    },
+                    {
+                        "Hoboken, NJ": 1
+                    },
+                    {
+                        "Morristown, NJ": 1
+                    },
+                    {
+                        "Queens, NY": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Deloitte": 20
+                    },
+                    {
+                        "Michael Page": 8
+                    },
+                    {
+                        "Digital Pulp": 5
+                    },
+                    {
+                        "Columbia University": 4
+                    },
+                    {
+                        "Goldman Sachs": 2
+                    },
+                    {
+                        "Cognizant Technology Solutions": 2
+                    },
+                    {
+                        "Matlen Silver": 2
+                    },
+                    {
+                        "Insight Global": 2
+                    },
+                    {
+                        "VSB Tech Consulting Services": 2
+                    },
+                    {
+                        "AMC Networks Inc.": 2
+                    },
+                    {
+                        "Softnice Inc": 2
+                    },
+                    {
+                        "Happy Cog": 2
+                    },
+                    {
+                        "Prudential": 2
+                    },
+                    {
+                        "STAND 8": 2
+                    },
+                    {
+                        "Accede": 2
+                    },
+                    {
+                        "Accede LLC": 2
+                    }
+                ]
+            },
+            {
+                "name": "Laravel",
+                "remote": [
+                    {
+                        "Remote": 27
+                    },
+                    {
+                        "Temporarily remote": 1
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$70,000+": 56
+                    },
+                    {
+                        "$90,000+": 43
+                    },
+                    {
+                        "$100,000+": 35
+                    },
+                    {
+                        "$110,000+": 24
+                    },
+                    {
+                        "$120,000+": 16
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 38
+                    },
+                    {
+                        "Contract": 7
+                    },
+                    {
+                        "Temporary": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 36
+                    },
+                    {
+                        "Entry Level": 13
+                    },
+                    {
+                        "Senior Level": 4
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 31
+                    },
+                    {
+                        "Master's degree": 7
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 41
+                    },
+                    {
+                        "Jersey City, NJ": 6
+                    },
+                    {
+                        "Woodbridge, NJ": 4
+                    },
+                    {
+                        "Brooklyn, NY": 3
+                    },
+                    {
+                        "Maplewood, NJ": 2
+                    },
+                    {
+                        "Newark, NJ": 2
+                    },
+                    {
+                        "North Hills, NY": 1
+                    },
+                    {
+                        "Morris Plains, NJ": 1
+                    },
+                    {
+                        "New Rochelle, NY": 1
+                    },
+                    {
+                        "New Providence, NJ": 1
+                    },
+                    {
+                        "Paramus, NJ": 1
+                    },
+                    {
+                        "Morristown, NJ": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Penske Media": 6
+                    },
+                    {
+                        "Robert Half": 5
+                    },
+                    {
+                        "CyberCoders": 4
+                    },
+                    {
+                        "Happy Cog": 3
+                    },
+                    {
+                        "Neptune Retail Solutions": 2
+                    },
+                    {
+                        "Intuit": 2
+                    },
+                    {
+                        "Cedar Inc": 2
+                    },
+                    {
+                        "Opt-Intelligence": 2
+                    },
+                    {
+                        "Clandica Inc": 1
+                    },
+                    {
+                        "Soteria Investments": 1
+                    },
+                    {
+                        "Kubient": 1
+                    },
+                    {
+                        "CBS": 1
+                    },
+                    {
+                        "Weichert": 1
+                    },
+                    {
+                        "JCDecaux North America": 1
+                    },
+                    {
+                        "SPARKS MARKETING LLC": 1
+                    },
+                    {
+                        "Core RecruiteMe Inc": 1
+                    },
+                    {
+                        "StationMD": 1
+                    },
+                    {
+                        "Appliance Connection": 1
+                    },
+                    {
+                        "eGrove Systems Corporation": 1
+                    },
+                    {
+                        "Conde Nast": 1
+                    },
+                    {
+                        "Prompt Therapy Solutions": 1
+                    },
+                    {
+                        "Engine23": 1
+                    },
+                    {
+                        "Townsquare Interactive": 1
+                    },
+                    {
+                        "Nielsen": 1
+                    },
+                    {
+                        "ACADACA": 1
+                    },
+                    {
+                        "PCMag": 1
+                    },
+                    {
+                        "IV Interactive": 1
+                    }
+                ]
+            },
+            {
+                "name": "Haskell",
+                "remote": [
+                    {
+                        "Remote": 6
+                    },
+                    {
+                        "Temporarily remote": 1
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$105,000+": 53
+                    },
+                    {
+                        "$110,000+": 38
+                    },
+                    {
+                        "$120,000+": 30
+                    },
+                    {
+                        "$125,000+": 15
+                    },
+                    {
+                        "$130,000+": 13
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 8
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Entry Level": 37
+                    },
+                    {
+                        "Mid Level": 15
+                    },
+                    {
+                        "Senior Level": 3
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 31
+                    },
+                    {
+                        "Master's degree": 28
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 54
+                    },
+                    {
+                        "Jersey City, NJ": 3
+                    },
+                    {
+                        "Hoboken, NJ": 2
+                    },
+                    {
+                        "Brooklyn, NY": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Facebook App": 36
+                    },
+                    {
+                        "Odeko": 3
+                    },
+                    {
+                        "Citi": 3
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 2
+                    },
+                    {
+                        "Walmart": 2
+                    },
+                    {
+                        "Farther Finance": 2
+                    },
+                    {
+                        "SkedgeMe": 2
+                    },
+                    {
+                        "Droit": 1
+                    },
+                    {
+                        "EARNEST RESEARCH": 1
+                    },
+                    {
+                        "BlockApps, Inc.": 1
+                    },
+                    {
+                        "Barclays": 1
+                    },
+                    {
+                        "Spruce Systems": 1
+                    },
+                    {
+                        "MHK Tech Inc.": 1
+                    },
+                    {
+                        "Disney Streaming": 1
+                    },
+                    {
+                        "Northwestern Mutual": 1
+                    }
+                ]
+            },
+            {
+                "name": "Express.js",
+                "remote": [
+                    {
+                        "Remote": 11
+                    },
+                    {
+                        "Temporarily remote": 1
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$80,000+": 36
+                    },
+                    {
+                        "$100,000+": 28
+                    },
+                    {
+                        "$110,000+": 23
+                    },
+                    {
+                        "$120,000+": 19
+                    },
+                    {
+                        "$140,000+": 7
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 30
+                    },
+                    {
+                        "Temporary": 4
+                    },
+                    {
+                        "Contract": 3
+                    },
+                    {
+                        "Internship": 1
+                    },
+                    {
+                        "Part-time": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Entry Level": 20
+                    },
+                    {
+                        "Mid Level": 13
+                    },
+                    {
+                        "Senior Level": 9
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 25
+                    },
+                    {
+                        "Master's degree": 16
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 20
+                    },
+                    {
+                        "Long Island City, NY": 9
+                    },
+                    {
+                        "Parsippany, NJ": 3
+                    },
+                    {
+                        "Florham Park, NJ": 3
+                    },
+                    {
+                        "Jersey City, NJ": 2
+                    },
+                    {
+                        "Hoboken, NJ": 2
+                    },
+                    {
+                        "Brooklyn, NY": 2
+                    },
+                    {
+                        "West Caldwell, NJ": 1
+                    },
+                    {
+                        "Fort Lee, NJ": 1
+                    },
+                    {
+                        "Newark, NJ": 1
+                    },
+                    {
+                        "Iselin, NJ": 1
+                    },
+                    {
+                        "Woodbridge, NJ": 1
+                    },
+                    {
+                        "Manhattan, NY": 1
+                    },
+                    {
+                        "East Rutherford, NJ": 1
+                    },
+                    {
+                        "Morristown, NJ": 1
+                    },
+                    {
+                        "Perth Amboy, NJ": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Macy’s": 9
+                    },
+                    {
+                        "IQVIA": 6
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 4
+                    },
+                    {
+                        "Advisr": 2
+                    },
+                    {
+                        "Robert Half": 2
+                    },
+                    {
+                        "Ad Hoc Team": 2
+                    },
+                    {
+                        "Axoni": 2
+                    },
+                    {
+                        "Penguin Random House LLC": 1
+                    },
+                    {
+                        "Airacer": 1
+                    },
+                    {
+                        "DISYS": 1
+                    },
+                    {
+                        "Accenture": 1
+                    },
+                    {
+                        "The Metro Group, Inc.": 1
+                    },
+                    {
+                        "Pattanayak Engineering Inc": 1
+                    },
+                    {
+                        "SheWorks": 1
+                    },
+                    {
+                        "Zearn": 1
+                    },
+                    {
+                        "Ossisto": 1
+                    },
+                    {
+                        "Analytic Partners": 1
+                    },
+                    {
+                        "Tipico USA Technology": 1
+                    },
+                    {
+                        "NYU Langone": 1
+                    },
+                    {
+                        "ShopBop": 1
+                    },
+                    {
+                        "Priceline.com": 1
+                    },
+                    {
+                        "Pearson": 1
+                    },
+                    {
+                        "The Panther Group": 1
+                    },
+                    {
+                        "RevHealth": 1
+                    }
+                ]
+            },
+            {
+                "name": "Assembly",
+                "remote": [
+                    {
+                        "Remote": 2
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$95,000+": 12
+                    },
+                    {
+                        "$105,000+": 10
+                    },
+                    {
+                        "$120,000+": 8
+                    },
+                    {
+                        "$125,000+": 6
+                    },
+                    {
+                        "$135,000+": 3
+                    },
+                    {
+                        "$100,000+": 10
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 12
+                    },
+                    {
+                        "Contract": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 9
+                    },
+                    {
+                        "Entry Level": 3
+                    },
+                    {
+                        "Senior Level": 2
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 13
+                    },
+                    {
+                        "Master's degree": 2
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 10
+                    },
+                    {
+                        "Florham Park, NJ": 5
+                    },
+                    {
+                        "Franklin Lakes, NJ": 2
+                    },
+                    {
+                        "Madison, NJ": 1
+                    },
+                    {
+                        "Secaucus, NJ": 1
+                    },
+                    {
+                        "Pine Brook, NJ": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "CACI": 5
+                    },
+                    {
+                        "Katalyst Healthcares & Life Sciences": 2
+                    },
+                    {
+                        "Booz Allen Hamilton": 1
+                    },
+                    {
+                        "VanderHouwen": 1
+                    },
+                    {
+                        "Sensor Products Inc.": 1
+                    },
+                    {
+                        "Crowdstrike": 1
+                    },
+                    {
+                        "ZT Systems": 1
+                    },
+                    {
+                        "Bell-Mark Sales Co.": 1
+                    },
+                    {
+                        "Tangent Logic": 1
+                    },
+                    {
+                        "Roy Talman & Associates": 1
+                    },
+                    {
+                        "Xylem": 1
+                    },
+                    {
+                        "Facebook App": 1
+                    },
+                    {
+                        "Change Healthcare": 1
+                    },
+                    {
+                        "Rockstar Games": 1
+                    },
+                    {
+                        "Vatic Investments": 1
+                    }
+                ]
+            },
+            {
+                "name": "Gatsby",
+                "remote": [
+                    {
+                        "Remote": 1
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$100,000+": 13
+                    },
+                    {
+                        "$110,000+": 11
+                    },
+                    {
+                        "$125,000+": 8
+                    },
+                    {
+                        "$130,000+": 7
+                    },
+                    {
+                        "$140,000+": 3
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 11
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 6
+                    },
+                    {
+                        "Senior Level": 3
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 6
+                    },
+                    {
+                        "Master's degree": 1
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 10
+                    },
+                    {
+                        "Jersey City, NJ": 4
+                    },
+                    {
+                        "Manhattan, NY": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Cognizant Technology Solutions": 2
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 2
+                    },
+                    {
+                        "Columbia University": 2
+                    },
+                    {
+                        "Goldman Sachs": 2
+                    },
+                    {
+                        "Carta": 1
+                    },
+                    {
+                        "Kinship": 1
+                    },
+                    {
+                        "Triller": 1
+                    },
+                    {
+                        "Pawp": 1
+                    },
+                    {
+                        "CEDENT": 1
+                    },
+                    {
+                        "Intone Networks": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dart",
+                "remote": [
+                    {
+                        "Remote": 6
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$90,000+": 7
+                    },
+                    {
+                        "$95,000+": 5
+                    },
+                    {
+                        "$100,000+": 4
+                    },
+                    {
+                        "$120,000+": 2
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 9
+                    },
+                    {
+                        "Contract": 3
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 8
+                    },
+                    {
+                        "Senior Level": 2
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 10
+                    },
+                    {
+                        "Master's degree": 2
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 6
+                    },
+                    {
+                        "Morristown, NJ": 2
+                    },
+                    {
+                        "Bergenfield, NJ": 2
+                    },
+                    {
+                        "Jersey City, NJ": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "Gannett": 6
+                    },
+                    {
+                        "Ascendum": 2
+                    },
+                    {
+                        "EPCOT TECH": 1
+                    },
+                    {
+                        "OneSignal": 1
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 1
+                    }
+                ]
+            },
+            {
+                "name": "Julia",
+                "remote": [],
+                "salaryEst": [
+                    {
+                        "$140,000+": 2
+                    },
+                    {
+                        "$155,000+": 1
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 1
+                    },
+                    {
+                        "Senior Level": 1
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Master's degree": 3
+                    },
+                    {
+                        "Doctoral degree": 3
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 2
+                    },
+                    {
+                        "Florham Park, NJ": 1
+                    }
+                ],
+                "company": [
+                    {
+                        "JPMorgan Chase Bank, N.A.": 1
+                    },
+                    {
+                        "Jacobs Levy Equity Management": 1
+                    },
+                    {
+                        "New York University": 1
+                    }
+                ]
+            },
+            {
+                "name": "Node.js",
+                "remote": [
+                    {
+                        "Remote": 492
+                    },
+                    {
+                        "Temporarily remote": 36
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$110,000+": 1895
+                    },
+                    {
+                        "$120,000+": 1631
+                    },
+                    {
+                        "$135,000+": 1129
+                    },
+                    {
+                        "$140,000+": 956
+                    },
+                    {
+                        "$155,000+": 380
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 890
+                    },
+                    {
+                        "Contract": 76
+                    },
+                    {
+                        "Part-time": 14
+                    },
+                    {
+                        "Temporary": 13
+                    },
+                    {
+                        "Internship": 5
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 1175
+                    },
+                    {
+                        "Senior Level": 436
+                    },
+                    {
+                        "Entry Level": 160
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 1508
+                    },
+                    {
+                        "Master's degree": 400
+                    },
+                    {
+                        "Doctoral degree": 63
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 1222
+                    },
+                    {
+                        "Jersey City, NJ": 117
+                    },
+                    {
+                        "Brooklyn, NY": 96
+                    },
+                    {
+                        "Hoboken, NJ": 90
+                    },
+                    {
+                        "Newark, NJ": 89
+                    },
+                    {
+                        "Westbury, NY": 56
+                    },
+                    {
+                        "Florham Park, NJ": 31
+                    },
+                    {
+                        "Parsippany, NJ": 26
+                    },
+                    {
+                        "Long Island City, NY": 15
+                    },
+                    {
+                        "Secaucus, NJ": 13
+                    },
+                    {
+                        "Whippany, NJ": 12
+                    },
+                    {
+                        "Jericho, NY": 12
+                    },
+                    {
+                        "Englewood Cliffs, NJ": 12
+                    },
+                    {
+                        "White Plains, NY": 11
+                    },
+                    {
+                        "Manhattan, NY": 11
+                    }
+                ],
+                "company": [
+                    {
+                        "Capital One": 615
+                    },
+                    {
+                        "Recruiting From Scratch": 207
+                    },
+                    {
+                        "Deloitte": 79
+                    },
+                    {
+                        "BNY Mellon": 49
+                    },
+                    {
+                        "Amazon.com Services LLC": 45
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 43
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 31
+                    },
+                    {
+                        "Amazon Dev Center U.S., Inc.": 25
+                    },
+                    {
+                        "CyberCoders": 23
+                    },
+                    {
+                        "Shopify": 17
+                    },
+                    {
+                        "Michael Page": 16
+                    },
+                    {
+                        "Capgemini": 16
+                    },
+                    {
+                        "The New York Times": 14
+                    },
+                    {
+                        "Bloomberg": 13
+                    },
+                    {
+                        "NBCUniversal": 13
+                    },
+                    {
+                        "Amazon Web Services, Inc.": 45
+                    }
+                ]
+            },
+            {
+                "name": ".NET",
+                "remote": [
+                    {
+                        "Remote": 123
+                    },
+                    {
+                        "Temporarily remote": 43
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$95,000+": 811
+                    },
+                    {
+                        "$105,000+": 685
+                    },
+                    {
+                        "$115,000+": 522
+                    },
+                    {
+                        "$125,000+": 338
+                    },
+                    {
+                        "$135,000+": 166
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 626
+                    },
+                    {
+                        "Contract": 101
+                    },
+                    {
+                        "Part-time": 14
+                    },
+                    {
+                        "Temporary": 6
+                    },
+                    {
+                        "Internship": 2
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 517
+                    },
+                    {
+                        "Senior Level": 229
+                    },
+                    {
+                        "Entry Level": 93
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 657
+                    },
+                    {
+                        "Master's degree": 146
+                    },
+                    {
+                        "Doctoral degree": 4
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 515
+                    },
+                    {
+                        "Jersey City, NJ": 87
+                    },
+                    {
+                        "Parsippany, NJ": 48
+                    },
+                    {
+                        "Berkeley Heights, NJ": 48
+                    },
+                    {
+                        "Florham Park, NJ": 29
+                    },
+                    {
+                        "Hoboken, NJ": 27
+                    },
+                    {
+                        "Newark, NJ": 23
+                    },
+                    {
+                        "Manhattan, NY": 19
+                    },
+                    {
+                        "Brooklyn, NY": 19
+                    },
+                    {
+                        "Iselin, NJ": 15
+                    },
+                    {
+                        "Whippany, NJ": 13
+                    },
+                    {
+                        "Jericho, NY": 10
+                    },
+                    {
+                        "Long Island City, NY": 9
+                    },
+                    {
+                        "Queens, NY": 9
+                    },
+                    {
+                        "North Hills, NY": 9
+                    }
+                ],
+                "company": [
+                    {
+                        "Deloitte": 56
+                    },
+                    {
+                        "Fiserv": 44
+                    },
+                    {
+                        "Michael Page": 28
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 25
+                    },
+                    {
+                        "Amazon.com Services LLC": 22
+                    },
+                    {
+                        "Capgemini": 16
+                    },
+                    {
+                        "Accenture": 15
+                    },
+                    {
+                        "Citi": 12
+                    },
+                    {
+                        "Bank of America": 12
+                    },
+                    {
+                        "Wells Fargo": 11
+                    },
+                    {
+                        "BlackLine": 11
+                    },
+                    {
+                        "Avi web solutions": 11
+                    },
+                    {
+                        "Morgan Stanley": 11
+                    },
+                    {
+                        "Barclays": 11
+                    },
+                    {
+                        "NYC Careers": 10
+                    },
+                    {
+                        "Fiserv, Inc.": 44
+                    },
+                    {
+                        "ISO": 10
+                    }
+                ]
+            },
+            {
+                "name": "XML",
+                "remote": [
+                    {
+                        "Remote": 75
+                    },
+                    {
+                        "Temporarily remote": 30
+                    }
+                ],
+                "salaryEst": [
+                    {
+                        "$95,000+": 576
+                    },
+                    {
+                        "$105,000+": 485
+                    },
+                    {
+                        "$115,000+": 374
+                    },
+                    {
+                        "$125,000+": 247
+                    },
+                    {
+                        "$140,000+": 120
+                    }
+                ],
+                "jobType": [
+                    {
+                        "Full-time": 398
+                    },
+                    {
+                        "Contract": 82
+                    },
+                    {
+                        "Part-time": 9
+                    },
+                    {
+                        "Temporary": 3
+                    },
+                    {
+                        "Internship": 1
+                    }
+                ],
+                "expLevel": [
+                    {
+                        "Mid Level": 344
+                    },
+                    {
+                        "Senior Level": 198
+                    },
+                    {
+                        "Entry Level": 56
+                    }
+                ],
+                "eduLevel": [
+                    {
+                        "Bachelor's degree": 490
+                    },
+                    {
+                        "Master's degree": 154
+                    },
+                    {
+                        "Doctoral degree": 4
+                    }
+                ],
+                "location": [
+                    {
+                        "New York, NY": 319
+                    },
+                    {
+                        "Jersey City, NJ": 89
+                    },
+                    {
+                        "Berkeley Heights, NJ": 27
+                    },
+                    {
+                        "Newark, NJ": 25
+                    },
+                    {
+                        "Florham Park, NJ": 23
+                    },
+                    {
+                        "Parsippany, NJ": 18
+                    },
+                    {
+                        "Iselin, NJ": 17
+                    },
+                    {
+                        "Brooklyn, NY": 11
+                    },
+                    {
+                        "Manhattan, NY": 10
+                    },
+                    {
+                        "Hoboken, NJ": 9
+                    },
+                    {
+                        "Hicksville, NY": 9
+                    },
+                    {
+                        "Long Island City, NY": 9
+                    },
+                    {
+                        "Roseland, NJ": 8
+                    },
+                    {
+                        "Jericho, NY": 7
+                    },
+                    {
+                        "Westbury, NY": 6
+                    },
+                    {
+                        "Whippany, NJ": 6
+                    }
+                ],
+                "company": [
+                    {
+                        "Deloitte": 56
+                    },
+                    {
+                        "Capital One": 52
+                    },
+                    {
+                        "Fiserv, Inc.": 24
+                    },
+                    {
+                        "PRICE WATERHOUSE COOPERS": 24
+                    },
+                    {
+                        "JPMorgan Chase Bank, N.A.": 18
+                    },
+                    {
+                        "Amazon.com Services LLC": 17
+                    },
+                    {
+                        "Michael Page": 16
+                    },
+                    {
+                        "Accenture": 13
+                    },
+                    {
+                        "Recruiting From Scratch": 11
+                    },
+                    {
+                        "Citi": 11
+                    },
+                    {
+                        "NYC Careers": 10
+                    },
+                    {
+                        "Morgan Stanley": 10
+                    },
+                    {
+                        "Avi web solutions": 8
+                    },
+                    {
+                        "Prudential": 8
+                    },
+                    {
+                        "Salesforce": 8
+                    },
+                    {
+                        "Fiserv": 24
+                    }
+                ]
+            }
+        ],
+        "techRoot": {
+            "jobs": 13599,
+            "skills": [
+                {
+                    "Java": 5954
+                },
+                {
+                    "JavaScript": 4617
+                },
+                {
+                    "Python": 4552
+                },
+                {
+                    "React": 3379
+                },
+                {
+                    "SQL": 3100
+                },
+                {
+                    "HTML5": 2434
+                },
+                {
+                    "CSS": 2381
+                },
+                {
+                    "C++": 2267
+                },
+                {
+                    "C#": 2162
+                },
+                {
+                    "Angular": 1994
+                },
+                {
+                    "TypeScript": 1536
+                },
+                {
+                    "Go": 1457
+                },
+                {
+                    "Spring": 1429
+                },
+                {
+                    "Scala": 891
+                },
+                {
+                    "C": 895
+                },
+                {
+                    "Kotlin": 769
+                },
+                {
+                    "Ruby": 711
+                },
+                {
+                    "Swift": 685
+                },
+                {
+                    "PHP": 555
+                },
+                {
+                    "jQuery": 547
+                },
+                {
+                    "Vue.js": 463
+                },
+                {
+                    "Django": 408
+                },
+                {
+                    "Perl": 408
+                },
+                {
+                    "ASP.NET": 392
+                },
+                {
+                    "PowerShell": 245
+                },
+                {
+                    "Flask": 207
+                },
+                {
+                    "Objective-C": 194
+                },
+                {
+                    "R": 144
+                },
+                {
+                    "Rust": 133
+                },
+                {
+                    "Drupal": 101
+                },
+                {
+                    "Laravel": 65
+                },
+                {
+                    "Haskell": 60
+                },
+                {
+                    "Express.js": 50
+                },
+                {
+                    "Assembly": 19
+                },
+                {
+                    "Gatsby": 15
+                },
+                {
+                    "Dart": 11
+                },
+                {
+                    "Julia": 3
+                },
+                {
+                    "Node.js": 2371
+                },
+                {
+                    ".NET": 1030
+                },
+                {
+                    "XML": 732
+                }
+            ],
+            "remote": [
+                {
+                    "Remote": 2650
+                },
+                {
+                    "Temporarily remote": 298
+                }
+            ],
+            "salaryEst": [
+                {
+                    "$100,000+": 10454
+                },
+                {
+                    "$115,000+": 8355
+                },
+                {
+                    "$125,000+": 6539
+                },
+                {
+                    "$135,000+": 4625
+                },
+                {
+                    "$145,000+": 2625
+                }
+            ],
+            "jobType": [
+                {
+                    "Full-time": 6705
+                },
+                {
+                    "Contract": 734
+                },
+                {
+                    "Part-time": 97
+                },
+                {
+                    "Temporary": 70
+                },
+                {
+                    "Internship": 16
+                }
+            ],
+            "expLevel": [
+                {
+                    "Mid Level": 6663
+                },
+                {
+                    "Senior Level": 2668
+                },
+                {
+                    "Entry Level": 1570
+                }
+            ],
+            "eduLevel": [
+                {
+                    "Bachelor's degree": 8083
+                },
+                {
+                    "Master's degree": 2784
+                },
+                {
+                    "Doctoral degree": 646
+                }
+            ],
+            "location": [
+                {
+                    "New York, NY": 7964
+                },
+                {
+                    "Jersey City, NJ": 1084
+                },
+                {
+                    "Newark, NJ": 476
+                },
+                {
+                    "Brooklyn, NY": 421
+                },
+                {
+                    "Hoboken, NJ": 397
+                },
+                {
+                    "Berkeley Heights, NJ": 191
+                },
+                {
+                    "Parsippany, NJ": 149
+                },
+                {
+                    "Westbury, NY": 133
+                },
+                {
+                    "Florham Park, NJ": 130
+                },
+                {
+                    "Whippany, NJ": 101
+                },
+                {
+                    "Manhattan, NY": 99
+                },
+                {
+                    "Edison, NJ": 85
+                },
+                {
+                    "Iselin, NJ": 80
+                },
+                {
+                    "Weehawken, NJ": 68
+                },
+                {
+                    "Franklin Lakes, NJ": 52
+                }
+            ],
+            "company": [
+                {
+                    "Capital One": 1518
+                },
+                {
+                    "Recruiting From Scratch": 850
+                },
+                {
+                    "Amazon.com Services LLC": 729
+                },
+                {
+                    "JPMorgan Chase Bank, N.A.": 470
+                },
+                {
+                    "Deloitte": 255
+                },
+                {
+                    "VMware": 236
+                },
+                {
+                    "Amazon Dev Center U.S., Inc.": 208
+                },
+                {
+                    "Fiserv, Inc.": 190
+                },
+                {
+                    "Citi": 181
+                },
+                {
+                    "Bloomberg": 163
+                },
+                {
+                    "CyberCoders": 145
+                },
+                {
+                    "Michael Page": 131
+                },
+                {
+                    "Capgemini": 113
+                },
+                {
+                    "PRICE WATERHOUSE COOPERS": 107
+                },
+                {
+                    "Facebook App": 106
+                },
+                {
+                    "Amazon Web Services, Inc.": 729
+                },
+                {
+                    "Fiserv": 190
+                }
+            ]
+        }
+    }
+}
