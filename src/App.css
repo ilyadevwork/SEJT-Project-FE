@@ -2,3 +2,7 @@
     flex-grow: 3;
     padding: 3%;
 }
+.goo {
+    display: flex;
+    justify-content: center;
+}
