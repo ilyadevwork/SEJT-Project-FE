@@ -13,14 +13,15 @@ import { useDashContext } from "./store";
 import { useRef } from "react";
 
 ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend
-  );
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 
 const LineChart = () => {
   const [dashState] = useDashContext();

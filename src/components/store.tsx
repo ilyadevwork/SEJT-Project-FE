@@ -40,6 +40,7 @@ interface dash {
   chartdata: {
     datasets: [
       {
+        id?: number
         label: string;
         data: number[];
         backgroundColor?: string,
@@ -85,6 +86,7 @@ const initDash: dash = {
   chartdata: {
     datasets: [
       {
+        id: 1,
         label: jobsStore.dates[0].toString(),
         data: valuesExtractor(jobsStore.data[0].data.techRoot.skills),
       },
@@ -124,6 +126,7 @@ const updateData = (curState: dash, range: DateRange<Date>): dash => {
     );
 
     newState.chartdata.datasets.push({
+      id: (jobsStore.data.length+1),
       label: jobsStore.dates[idx].toString(),
       data: valuesExtractor(jobsStore.data[idx].data.techRoot.skills),
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
