@@ -9,9 +9,15 @@
             "request": "launch",
             "type": "pwa-chrome",
             "url": "http://localhost:3000",
-            "trace": true,
-            "webRoot": "${workspaceFolder/src}"
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 3000,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "urlFilter": "http://localhost:3000/*", // use urlFilter instead of url!
+            "webRoot": "${workspaceFolder}"
         }
-
     ]
 }

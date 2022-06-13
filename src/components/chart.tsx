@@ -1,42 +1,12 @@
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Chart } from "react-chartjs-2";
-import { useDashContext } from "./store";
-import { useRef } from "react";
+import React from "react";
+import { Line } from "@ant-design/charts";
+import { useDashContext } from "./configurator";
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
-
-const LineChart = () => {
-  const [dashState] = useDashContext();
-  const chartRef = useRef<ChartJS>(null);
-  const someChart = chartRef.current;
+const Chart: React.FC = () => {
+  const [dashState,] = useDashContext();
 
   return (
-    <Chart
-      ref={chartRef}
-      type="line"
-      options={dashState.options}
-      data={dashState.chartdata}
-      redraw={true}
-    />
+      <Line {...dashState.chart} />
   );
 };
-
-export default LineChart;
+export default Chart;
