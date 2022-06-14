@@ -3,11 +3,11 @@ import moment from "moment";
 import type { RangePickerProps } from "antd/es/date-picker";
 import React from "react";
 
-/*interface tableData {
+interface tableData {
   identifier: string;
   value: number;
   catagory?: string;
-}*/
+}
 
 export interface dashboard {
   chart: {
@@ -38,7 +38,15 @@ const data = snapshots[0].techRoot.skills;
 
 const dashConfig: dashboard = {
   chart: {
-    data: data,
+    data: [{
+      identifier: "placeholder",
+      value: 0,
+    },
+    {
+      identifier: "nothing",
+      value: 5,
+    },
+  ],
     theme: "default", // 'dark',
     seriesField: "",
     slider: {
