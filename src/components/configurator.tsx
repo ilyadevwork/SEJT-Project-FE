@@ -17,7 +17,7 @@ export interface dashboard {
     seriesField: string;
     smooth: boolean;
     slider: {};
-    theme: "default"; // 'dark',
+    theme: "dark"; // 'dark',
     point: {
       size: number;
       shape: string;
@@ -30,6 +30,7 @@ export interface dashboard {
   };
   selectedDate: [moment.Moment, moment.Moment];
   table: {
+    theme: "dark";
     data: any;
   };
 }
@@ -47,7 +48,7 @@ const dashConfig: dashboard = {
       value: 5,
     },
   ],
-    theme: "default", // 'dark',
+    theme: "dark", // 'dark',
     seriesField: "",
     slider: {
       start: 0,
@@ -68,6 +69,7 @@ const dashConfig: dashboard = {
   },
   selectedDate: [moment(snapshots[0].date), moment(snapshots[0].date)],
   table: {
+    theme: 'dark',
     data: {
       key: 1,
       technology: "",
