@@ -4,7 +4,6 @@ import { Layout } from "antd";
 import "antd/dist/antd.css";
 import { Col, Row } from "antd";
 import ThisTable from "./components/table";
-import MyDatePicker from "./components/datePicker";
 
 const { Content } = Layout;
 

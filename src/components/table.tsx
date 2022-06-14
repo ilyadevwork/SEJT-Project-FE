@@ -240,7 +240,7 @@ const App: React.FC = () => {
         >
           Reload
         </Button>
-        <span style={{ marginLeft: 8 }}>
+        <span style={{ marginRight: 16}}>
           {hasSelected ? `Selected ${selectedRowKeys.length} items` : ""}
         </span>
         <MyDatePicker></MyDatePicker>

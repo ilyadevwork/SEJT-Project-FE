@@ -1,49 +1,31 @@
-import React, { useState } from "react";
 import { DatePicker, Space, Switch } from "antd";
 import type { DatePickerProps, RangePickerProps } from "antd/es/date-picker";
+import React, { useState } from "react";
 import { disabledDate, firstDate, useDashContext } from "./configurator";
 import moment from "moment";
 
 const { RangePicker } = DatePicker;
 
-type PickerType = "range" | "date";
-
 const MyDatePicker: React.FC = () => {
   const [dashState, setDashState] = useDashContext();
-  const [type, setType] = useState<PickerType>("date");
+  const [hidden, setHidden] = useState(true);
 
-  const changeType = (
+  const onChange = (
     value: DatePickerProps["value"] | RangePickerProps["value"],
     dateString: [string, string] | string
-  ) => {};
-
-  const PickerWithType = ({
-    type,
-    onChange,
-  }: {
-    type: PickerType;
-    onChange: typeof changeType
-  }) => {
-
-    if (type === "range")
-      return (
-        <RangePicker
-          bordered={false}
-          defaultPickerValue={firstDate}
-          disabledDate={disabledDate}
-          onChange={onChange}
-        />
-      );
-    if (type === "date")
-      return (
-        <DatePicker
-          bordered={false}
-          defaultPickerValue={firstDate![0]}
-          disabledDate={disabledDate}
-          onChange={onChange}
-        />
-      );
-    return <DatePicker picker={type} onChange={onChange} />;
+  ) => {
+    const tempState: any = { ...dashState };
+    if (typeof dateString === "string") {
+      tempState.selectedDate = [moment(dateString), moment(dateString)];
+      console.log(tempState.selectedDate);
+      setDashState({ ...tempState });
+      console.log(dashState);
+    } else {
+      tempState.selectedDate = [moment(dateString[0]), moment(dateString[1])];
+      console.log(tempState.selectedDate);
+      setDashState({ ...tempState });
+      console.log(dashState);
+    }
   };
 
   return (
@@ -51,30 +33,26 @@ const MyDatePicker: React.FC = () => {
       <Switch
         checkedChildren="Aggregate"
         unCheckedChildren="Disaggregate"
-        onChange={(checked) => {
-          if (checked === true) {
-            setType("range");
-            const tempState = dashState;
-            setDashState(tempState);
-            console.log(dashState);
-          } else setType("date");
-        }}
+        onChange={() => setHidden((s) => !s)}
       ></Switch>
-      <PickerWithType type={type} onChange={(value, datestr) => {
-        if (typeof datestr === 'string') 
-        {
-          const tempState = dashState;
-          tempState.selectedDate = [moment(datestr), moment(datestr)]
-        }
-        else
-        {
-          console.log("this is the range picker")
-        }
-
-
-      }} />
+        {!hidden ? (
+          <RangePicker
+            size={"small"}
+            disabledDate={disabledDate}
+            defaultPickerValue={firstDate}
+            onChange={onChange}
+            bordered={false}
+          />
+        ) : (
+          <DatePicker
+            onChange={onChange}
+            defaultPickerValue={firstDate![0]}
+            size={"small"}
+            disabledDate={disabledDate}
+            bordered={false}
+          />
+        )}
     </Space>
   );
 };
-
 export default MyDatePicker;
