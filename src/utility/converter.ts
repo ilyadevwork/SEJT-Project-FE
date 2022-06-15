@@ -115,7 +115,7 @@ export function parseData() {
 }
 parseData();
 
-const final = JSON.stringify(snapshotsNew ,);
+const final = JSON.stringify(snapshotsNew);
 
 fs.writeFile("./myjsonfile.json", final, "utf8", () => {});
 

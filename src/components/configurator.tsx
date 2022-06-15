@@ -1,13 +1,14 @@
 import snapshots from "../data/jobsNew.json";
 import moment from "moment";
 import type { RangePickerProps } from "antd/es/date-picker";
-import React from "react";
+import React, {useState} from "react";
 
-interface tableData {
+export interface tableData {
   identifier: string;
   value: number;
   catagory?: string;
 }
+
 
 export interface dashboard {
   chart: {
@@ -17,7 +18,7 @@ export interface dashboard {
     seriesField: string;
     smooth: boolean;
     slider: {};
-    theme: "dark"; // 'dark',
+    theme: string; // 'dark',
     point: {
       size: number;
       shape: string;
@@ -29,26 +30,17 @@ export interface dashboard {
     };
   };
   selectedDate: [moment.Moment, moment.Moment];
+  currentSnapshot: number;
   table: {
-    theme: "dark";
-    data: any;
+    data: any[];
   };
 }
 
-const data = snapshots[0].techRoot.skills;
 
 const dashConfig: dashboard = {
   chart: {
-    data: [{
-      identifier: "placeholder",
-      value: 0,
-    },
-    {
-      identifier: "nothing",
-      value: 5,
-    },
-  ],
-    theme: "dark", // 'dark',
+    data: snapshots[0].techRoot.skills,
+    theme: "default", // 'dark',
     seriesField: "",
     slider: {
       start: 0,
@@ -68,14 +60,9 @@ const dashConfig: dashboard = {
     },
   },
   selectedDate: [moment(snapshots[0].date), moment(snapshots[0].date)],
+  currentSnapshot: 0,
   table: {
-    theme: 'dark',
-    data: {
-      key: 1,
-      technology: "",
-      marketshare: 0,
-      listings: "",
-    },
+    data: [],
   },
 };
 

@@ -9,13 +9,13 @@ import {
   useDashContext,
 } from "./configurator";
 import moment from "moment";
-import snapshots from "../data/jobsNew.json";
-
+import { dateUpdate, stateStore, tableUpdate } from "../utility/store";
 const { RangePicker } = DatePicker;
 
 const MyDatePicker: React.FC = () => {
   const [dashState, setDashState] = useDashContext();
   const [hidden, setHidden] = useState(true);
+  const useStore = stateStore();
 
   const onChange = (
     value: DatePickerProps["value"] | RangePickerProps["value"],
@@ -23,13 +23,17 @@ const MyDatePicker: React.FC = () => {
   ) => {
     const tempState: dashboard = { ...dashState };
     if (typeof dateString === "string") {
-      tempState.selectedDate = [moment(dateString), moment(dateString)];
-      const selectedData: any = snapshots.find(
-        (x) => moment(x.date).format("YYYY-MM-DD") === dateString
-      );
-      tempState.chart.data = selectedData.techRoot.skills;
-      console.log(tempState);
-      setDashState({ ...tempState });
+      if (value === null) {
+      } else
+        setDashState(
+          dateUpdate(
+            dashState,
+            [moment(dateString), moment(dateString)],
+            true,
+            useStore.catagory
+          )!
+        );
+      setDashState(tableUpdate(dashState, true)!);
     } else {
       tempState.selectedDate = [moment(dateString[0]), moment(dateString[1])];
       console.log(tempState.selectedDate);
@@ -47,6 +51,7 @@ const MyDatePicker: React.FC = () => {
       ></Switch>
       {!hidden ? (
         <RangePicker
+          allowClear={false}
           size={"small"}
           disabledDate={disabledDate}
           defaultPickerValue={firstDate}
@@ -57,7 +62,9 @@ const MyDatePicker: React.FC = () => {
         <DatePicker
           onChange={onChange}
           defaultPickerValue={firstDate![0]}
+          defaultValue={firstDate![0]}
           size={"small"}
+          allowClear={false}
           disabledDate={disabledDate}
           bordered={false}
         />

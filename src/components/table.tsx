@@ -1,5 +1,15 @@
 import { DownOutlined } from "@ant-design/icons";
-import { Button, Badge, Dropdown, Menu, Space, Table, Input } from "antd";
+import {
+  Button,
+  Badge,
+  Dropdown,
+  Menu,
+  Space,
+  Table,
+  Input,
+  Select,
+  Progress,
+} from "antd";
 import type { ColumnsType, ColumnType } from "antd/lib/table";
 import React, { useRef, useState } from "react";
 import Highlighter from "react-highlight-words";
@@ -8,12 +18,16 @@ import type { InputRef } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { useDashContext } from "./configurator";
 import MyDatePicker from "./datePicker";
+import Selection from "./selector";
+import { table } from "console";
+
+const { Option } = Select;
 
 interface DataType {
   key: React.Key;
-  technology: string;
+  identifier: string;
   marketshare: number;
-  listings: number;
+  value: number;
 }
 
 type DataIndex = keyof DataType;
@@ -40,9 +54,9 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
-
+  const [hasData, setHasData] = useState(true);
   const searchInput = useRef<InputRef>(null);
-  const data: DataType[] = [dashState.table.data];
+  const tableStore: DataType[] = dashState.table.data;
   const hasSelected = selectedRowKeys.length > 0;
   const onSelectChange = (newSelectedRowKeys: React.Key[]) => {
     console.log("selectedRowKeys changed: ", selectedRowKeys);
@@ -52,7 +66,7 @@ const App: React.FC = () => {
   const expandedRowRender = () => {
     const columns: ColumnsType<ExpandedDataType> = [
       { title: "Date", dataIndex: "date", key: "date" },
-      { title: "Name", dataIndex: "name", key: "name" },
+      { title: "Identity", dataIndex: "identity", key: "identity" },
       {
         title: "Status",
         key: "state",
@@ -85,7 +99,7 @@ const App: React.FC = () => {
     const data = [];
     for (let i = 0; i < 3; ++i) {
       data.push({
-        key: i,
+        key: i + 100,
         date: "2014-12-24 23:12:00",
         name: "This is production name",
         upgradeNum: "Upgraded: 56",
@@ -206,27 +220,30 @@ const App: React.FC = () => {
 
   const columns: ColumnsType<DataType> = [
     {
-      title: "Technology",
-      dataIndex: "technology",
-      key: "technology",
-      ...getColumnSearchProps("technology"),
+      title: "Name",
+      dataIndex: "identifier",
+      key: "identifier",
+      ...getColumnSearchProps("identifier"),
     },
     {
       title: "Listings",
-      dataIndex: "listings",
-      key: "listings",
-      sorter: (a, b) => a.listings - b.listings,
+      dataIndex: "value",
+      key: "value",
+      sorter: (a, b) => a.value - b.value,
       sortDirections: ["descend", "ascend"],
     },
-
     {
       title: "Market Share %",
       dataIndex: "marketshare",
       key: "marketshare",
       sortDirections: ["descend", "ascend"],
-      sorter: (a, b) => a.listings - b.listings,
+      sorter: (a, b) => a.value - b.value,
+      render: (dataIndex) => (
+        <div style={{ width: "85%" }}>
+          <Progress size="small" percent={dataIndex}></Progress>
+        </div>
+      ),
     },
-    //{ title: "Action", key: "operation", render: () => <a>Publish</a> },
   ];
 
   return (
@@ -240,16 +257,17 @@ const App: React.FC = () => {
         >
           Reload
         </Button>
-        <span style={{ marginRight: 16}}>
+        <span style={{ marginRight: 16 }}>
           {hasSelected ? `Selected ${selectedRowKeys.length} items` : ""}
         </span>
         <MyDatePicker></MyDatePicker>
+        <Selection></Selection>
       </div>
       <Table
         className="components-table-demo-nested"
         columns={columns}
         expandable={{ expandedRowRender }}
-        dataSource={data}
+        dataSource={hasData ? tableStore : []}
         rowSelection={rowSelection}
         size={"small"}
       />
