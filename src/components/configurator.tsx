@@ -1,14 +1,13 @@
 import snapshots from "../data/jobsNew.json";
 import moment from "moment";
 import type { RangePickerProps } from "antd/es/date-picker";
-import React, {useState} from "react";
+import React from "react";
 
 export interface tableData {
   identifier: string;
   value: number;
   catagory?: string;
 }
-
 
 export interface dashboard {
   chart: {
@@ -36,7 +35,6 @@ export interface dashboard {
   };
 }
 
-
 const dashConfig: dashboard = {
   chart: {
     data: snapshots[0].techRoot.skills,
@@ -51,7 +49,7 @@ const dashConfig: dashboard = {
     smooth: false,
     point: {
       size: 5,
-      shape: "diamond",
+      shape: "circle",
     },
     label: {
       style: {

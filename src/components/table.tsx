@@ -19,7 +19,6 @@ import { SearchOutlined } from "@ant-design/icons";
 import { useDashContext } from "./configurator";
 import MyDatePicker from "./datePicker";
 import Selection from "./selector";
-import { table } from "console";
 
 const { Option } = Select;
 
@@ -240,7 +239,11 @@ const App: React.FC = () => {
       sorter: (a, b) => a.value - b.value,
       render: (dataIndex) => (
         <div style={{ width: "85%" }}>
-          <Progress size="small" percent={dataIndex}></Progress>
+          <Progress size="small" 
+             strokeColor={{
+              '0%': '#108ee9',
+              '100%': '#87d068',}}
+          percent={dataIndex}></Progress>
         </div>
       ),
     },
