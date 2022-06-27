@@ -18,9 +18,9 @@ features will not work or may break the application which requires a reload.
 For the purpose of development, a local dataset in the form of Jobs.json is currently used instead of database. The dataset contains 12 snapshots(days) of information which was downloaded from database.
 
   Placeholders for features not yet implemented. / Experimentation
-*Range Selector currently does not work.
-*Expanded table content is irrelevent
-*Reload on selection button does not do anything.
+* Range Selector currently does not work.
+* Expanded table content is irrelevent
+* Reload on selection button does not do anything.
 
 
 
