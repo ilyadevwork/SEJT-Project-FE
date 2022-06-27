@@ -12,8 +12,8 @@ Built with Typescript / Zustand / React / AntDesign Charts & Ant Design
 
 ## Disclaimer
 
-The application is not finished and a work in progress some
-features will not work or may break the application that require many require a reload.
+The application is not finished and some
+features will not work or may break the application which requires a reload.
 
 For the purpose of development, a local dataset in the form of Jobs.json is currently used instead of database. The dataset contains 12 snapshots(days) of information which was downloaded from database.
 
