@@ -7,7 +7,8 @@ This repository is the user interface of SEJT.
 ``
 Built with Typescript / Zustand / React / AntDesign Charts & Ant Design
 ``
-Collector Script: [Repository](https://github.com/ilyadevwork/SEJT-Project)
+
+  Collector Script: [Repository](https://github.com/ilyadevwork/SEJT-Project)
 
 ## Disclaimer
 
@@ -16,7 +17,11 @@ features will not work or may break the application that require many require a 
 
 For the purpose of development, a local dataset in the form of Jobs.json is currently used instead of database. The dataset contains 12 snapshots(days) of information which was downloaded from database.
 
-Range Selector currently does not work.
+  Placeholders for features not yet implemented. / Experimentation
+*Range Selector currently does not work.
+*Expanded table content is irrelevent
+*Reload on selection button does not do anything.
+
 
 
 ## Installation
