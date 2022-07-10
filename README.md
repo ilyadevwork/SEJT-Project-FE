@@ -4,6 +4,8 @@ Software Engineering Job Tool is an analytical utility for the purpose of visual
 
 This repository is the user interface of SEJT.
 
+Play with it in a sandbox! -> https://codesandbox.io/s/sejt-kdcgmo, Note. The data set here has been reduced to two days so that it will load properly in the sandbox.
+
 ``
 Built with Typescript / Zustand / React / AntDesign Charts & Ant Design
 ``
