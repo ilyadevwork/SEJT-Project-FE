@@ -2,7 +2,7 @@ import snapshots from "../archive/jobs.json";
 import _ from "underscore";
 import * as fs from "fs";
 
-interface jobsInterface {
+export interface jobsInterface {
   techBranch: [
     {
       name: string;

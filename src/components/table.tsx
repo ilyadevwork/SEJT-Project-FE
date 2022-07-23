@@ -1,25 +1,21 @@
-import { DownOutlined } from "@ant-design/icons";
+import { DownOutlined, SearchOutlined } from "@ant-design/icons";
 import {
-  Button,
   Badge,
+  Button,
   Dropdown,
+  Input,
   Menu,
+  Progress,
+  Select,
   Space,
   Table,
-  Input,
-  Select,
-  Progress,
 } from "antd";
-import type { ColumnsType, ColumnType } from "antd/lib/table";
 import React, { useRef, useState } from "react";
 import Highlighter from "react-highlight-words";
+import type { ColumnsType, ColumnType } from "antd/lib/table";
 import type { FilterConfirmProps } from "antd/lib/table/interface";
 import type { InputRef } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
-import { useDashContext } from "./configurator";
-import MyDatePicker from "./datePicker";
-import Selection from "./selector";
-
+import { stateStore } from "../utility/state"
 const { Option } = Select;
 
 interface DataType {
@@ -47,20 +43,9 @@ const menu = (
   />
 );
 
-const App: React.FC = () => {
-  const [dashState] = useDashContext();
-  const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [searchText, setSearchText] = useState("");
-  const [searchedColumn, setSearchedColumn] = useState("");
-  const [hasData, setHasData] = useState(true);
-  const searchInput = useRef<InputRef>(null);
-  const tableStore: DataType[] = dashState.table.data;
-  const hasSelected = selectedRowKeys.length > 0;
-  const onSelectChange = (newSelectedRowKeys: React.Key[]) => {
-    console.log("selectedRowKeys changed: ", selectedRowKeys);
-    setSelectedRowKeys(newSelectedRowKeys);
-  };
+const MyTable: React.FC = () => {
+
+  const { tableData } = stateStore();
 
   const expandedRowRender = () => {
     const columns: ColumnsType<ExpandedDataType> = [
@@ -116,10 +101,11 @@ const App: React.FC = () => {
     }, 1000);
   };
 
-  const rowSelection = {
-    selectedRowKeys,
-    onChange: onSelectChange,
-  };
+
+  const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
+  const hasSelected = selectedRowKeys.length > 0;
+  const onSelectChange = (newSelectedRowKeys: React.Key[]) => setSelectedRowKeys(newSelectedRowKeys);
+  const rowSelection = { selectedRowKeys, onChange: onSelectChange}; 
 
   const handleSearch = (
     selectedKeys: string[],
@@ -136,9 +122,12 @@ const App: React.FC = () => {
     setSearchText("");
   };
 
-  const getColumnSearchProps = (
-    dataIndex: DataIndex
-  ): ColumnType<DataType> => ({
+
+  const [searchText, setSearchText] = useState("");
+  const [searchedColumn, setSearchedColumn] = useState("");
+  const searchInput = useRef<InputRef>(null);
+
+  const getColumnSearchProps = ( dataIndex: DataIndex): ColumnType<DataType> => ({
     filterDropdown: ({
       setSelectedKeys,
       selectedKeys,
@@ -239,15 +228,20 @@ const App: React.FC = () => {
       sorter: (a, b) => a.value - b.value,
       render: (dataIndex) => (
         <div style={{ width: "85%" }}>
-          <Progress size="small" 
-             strokeColor={{
-              '0%': '#108ee9',
-              '100%': '#87d068',}}
-          percent={dataIndex}></Progress>
+          <Progress
+            size="small"
+            strokeColor={{
+              "0%": "#108ee9",
+              "100%": "#87d068",
+            }}
+            percent={dataIndex}
+          ></Progress>
         </div>
       ),
     },
   ];
+
+  const [loading, setLoading] = useState(false);
 
   return (
     <div>
@@ -263,14 +257,12 @@ const App: React.FC = () => {
         <span style={{ marginRight: 16 }}>
           {hasSelected ? `Selected ${selectedRowKeys.length} items` : ""}
         </span>
-        <MyDatePicker></MyDatePicker>
-        <Selection></Selection>
       </div>
       <Table
         className="components-table-demo-nested"
         columns={columns}
         expandable={{ expandedRowRender }}
-        dataSource={hasData ? tableStore : []}
+        dataSource={true ? tableData: []}
         rowSelection={rowSelection}
         size={"small"}
       />
@@ -278,4 +270,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default MyTable;

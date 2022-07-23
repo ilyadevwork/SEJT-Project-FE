@@ -1,47 +1,29 @@
 import { DatePicker, Space, Switch } from "antd";
-import type { DatePickerProps, RangePickerProps } from "antd/es/date-picker";
-import React from "react";
-import { disabledDate, firstDate, useDashContext } from "./configurator";
 import moment from "moment";
+import React from "react";
 import { stateStore } from "../utility/state";
-import { dateUpdate, tableUpdate } from "../utility/store";
+import { disabledDate, firstDate } from "../utility/store";
+import type { DatePickerProps, RangePickerProps } from "antd/es/date-picker";
+
 const { RangePicker } = DatePicker;
 
-
 const MyDatePicker: React.FC = () => {
-  const [dashState, setDashState] = useDashContext();
-  const useStore = stateStore();
+  const { setDate, isAggregate, setAggregation} = stateStore();
 
   const onChange = (
     value: DatePickerProps["value"] | RangePickerProps["value"],
     dateString: [string, string] | string
   ) => {
-    if (useStore.isAggregate === true) {
-      if (value === null) {
-      } else
-        setDashState(
-          dateUpdate(
-            dashState,
-            [moment(dateString), moment(dateString)],
-            true,
-            useStore.catagory
-          )!
-        );
-      setDashState(tableUpdate(dashState, true)!);
+    if (isAggregate) {
+      console.log("I'm Agg")
+      if (value === null) 
+      console.log("Null Date");
+      else {
+        setDate([moment(dateString), moment(dateString)]);   
+      }
     } else {
       if (value === null) {
-      } else
-        setDashState(
-          dateUpdate(
-            dashState,
-            [moment(dateString[0]), moment(dateString[1])],
-            false,
-            useStore.catagory,
-            useStore.selectedTech,
-            useStore.branchLoadedItems,
-          )!
-        );
-      setDashState(tableUpdate(dashState, true)!);
+      } else setDate([moment(dateString[0]), moment(dateString[1])]);
     }
   };
 
@@ -51,13 +33,12 @@ const MyDatePicker: React.FC = () => {
         defaultChecked={true}
         checkedChildren="Single"
         unCheckedChildren="Series"
-        onChange={(val) => useStore.setAggregation(val)}
+        onChange={(val) => setAggregation(val)}
       ></Switch>
-      {useStore.isAggregate ? (
+      {isAggregate ? (
         <DatePicker
           onChange={onChange}
           defaultPickerValue={firstDate![0]}
-          defaultValue={firstDate![0]}
           size={"small"}
           allowClear={false}
           disabledDate={disabledDate}
@@ -76,4 +57,5 @@ const MyDatePicker: React.FC = () => {
     </Space>
   );
 };
+
 export default MyDatePicker;

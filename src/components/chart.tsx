@@ -1,10 +1,9 @@
+import { Line} from "@ant-design/charts";
 import React from "react";
-import { Line } from "@ant-design/charts";
-import { useDashContext } from "./configurator";
+import { stateStore } from '../utility/state';
 
 const Chart: React.FC = () => {
-  const [dashState] = useDashContext();
-
-  return <Line {...dashState.chart} />;
+  const chartData = stateStore().chartData;
+  return <Line {...chartData} />
 };
 export default Chart;

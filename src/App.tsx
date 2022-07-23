@@ -1,31 +1,33 @@
-import { DashProvider } from "./components/configurator";
 import Chart from "./components/chart";
 import { Layout } from "antd";
-import "antd/dist/antd.css";
 import { Col, Row } from "antd";
-import ThisTable from "./components/table";
+import "antd/dist/antd.css";
+
+import Selection from "./components/selector";
+import MyDatePicker from "./components/datePicker";
+import MyTable from "./components/table";
 
 const { Content } = Layout;
 
 function App() {
   return (
-    <Layout>
-      <DashProvider>
-        <Content>
+    <Layout style={{ margin: 35 }}>
+      <Content>
         <div style={{ margin: 16 }}>
-            <Row>
-              <Col span={24}>
-                <Chart />
-              </Col>
-            </Row>
-            <Row>
-              <Col span={24}>
-                <ThisTable></ThisTable>
-              </Col>
-            </Row>
-          </div>
-        </Content>
-      </DashProvider>
+          <Row>
+            <Col span={24}>
+              <Chart />
+              <MyDatePicker />
+              <Selection />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={24}>
+            <MyTable></MyTable>
+            </Col>
+          </Row>
+        </div>
+      </Content>
     </Layout>
   );
 }
