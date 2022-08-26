@@ -15,12 +15,14 @@ import Highlighter from "react-highlight-words";
 import type { ColumnsType, ColumnType } from "antd/lib/table";
 import type { FilterConfirmProps } from "antd/lib/table/interface";
 import type { InputRef } from "antd";
-import { stateStore } from "../utility/state"
+import { stateStore } from "../store/state";
 const { Option } = Select;
+
 
 interface DataType {
   key: React.Key;
   identifier: string;
+  category?: string;
   marketshare: number;
   value: number;
 }
@@ -44,8 +46,8 @@ const menu = (
 );
 
 const MyTable: React.FC = () => {
-
-  const { tableData } = stateStore();
+  const tableData = stateStore((state) => state.tableData);
+  const isSeries = stateStore((state) => state.isSeries);
 
   const expandedRowRender = () => {
     const columns: ColumnsType<ExpandedDataType> = [
@@ -92,21 +94,6 @@ const MyTable: React.FC = () => {
     return <Table columns={columns} dataSource={data} pagination={false} />;
   };
 
-  const start = () => {
-    setLoading(true);
-    // ajax request after empty completing
-    setTimeout(() => {
-      setSelectedRowKeys([]);
-      setLoading(false);
-    }, 1000);
-  };
-
-
-  const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
-  const hasSelected = selectedRowKeys.length > 0;
-  const onSelectChange = (newSelectedRowKeys: React.Key[]) => setSelectedRowKeys(newSelectedRowKeys);
-  const rowSelection = { selectedRowKeys, onChange: onSelectChange}; 
-
   const handleSearch = (
     selectedKeys: string[],
     confirm: (param?: FilterConfirmProps) => void,
@@ -122,12 +109,13 @@ const MyTable: React.FC = () => {
     setSearchText("");
   };
 
-
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
   const searchInput = useRef<InputRef>(null);
 
-  const getColumnSearchProps = ( dataIndex: DataIndex): ColumnType<DataType> => ({
+  const getColumnSearchProps = (
+    dataIndex: DataIndex
+  ): ColumnType<DataType> => ({
     filterDropdown: ({
       setSelectedKeys,
       selectedKeys,
@@ -184,7 +172,7 @@ const MyTable: React.FC = () => {
       <SearchOutlined style={{ color: filtered ? "#1890ff" : undefined }} />
     ),
     onFilter: (value, record) =>
-      record[dataIndex]
+      record[dataIndex]!
         .toString()
         .toLowerCase()
         .includes((value as string).toLowerCase()),
@@ -205,6 +193,49 @@ const MyTable: React.FC = () => {
         text
       ),
   });
+
+  const columnsSeries: ColumnsType<DataType> = [
+    {
+      title: "Name",
+      dataIndex: "category",
+      key: "category",
+      ...getColumnSearchProps("category"),
+    },
+    {
+      title: "Value",
+      dataIndex: "value",
+      key: "value",
+      sorter: (a, b) => a.value - b.value,
+      sortDirections: ["descend", "ascend"],
+    },
+    {
+      title: "Date",
+      dataIndex: "identifier",
+      key: "identifier",
+      sorter: (a, b) => a.value - b.value,
+      sortDirections: ["descend", "ascend"],
+    },
+    {
+      title: "Market Share %",
+      dataIndex: "marketshare",
+      key: "marketshare",
+      sortDirections: ["descend", "ascend"],
+      sorter: (a, b) => a.value - b.value,
+      render: (dataIndex) => (
+        <div style={{ width: "85%" }}>
+          <Progress
+            size="small"
+            strokeColor={{
+              "0%": "#108ee9",
+              "100%": "#87d068",
+            }}
+            percent={dataIndex}
+          ></Progress>
+        </div>
+      ),
+    },
+  ];
+
 
   const columns: ColumnsType<DataType> = [
     {
@@ -241,31 +272,29 @@ const MyTable: React.FC = () => {
     },
   ];
 
-  const [loading, setLoading] = useState(false);
-
   return (
     <div>
-      <div style={{ marginBottom: 16 }}>
-        <Button
-          type="text"
-          onClick={start}
-          disabled={!hasSelected}
-          loading={loading}
-        >
-          Reload
-        </Button>
-        <span style={{ marginRight: 16 }}>
-          {hasSelected ? `Selected ${selectedRowKeys.length} items` : ""}
-        </span>
-      </div>
-      <Table
-        className="components-table-demo-nested"
-        columns={columns}
-        expandable={{ expandedRowRender }}
-        dataSource={true ? tableData: []}
-        rowSelection={rowSelection}
-        size={"small"}
-      />
+      {isSeries ? (
+        <div>
+          <div style={{ marginTop: 25 }}></div>
+          <Table
+            bordered={false}
+            columns={columnsSeries}
+            expandable={{ expandedRowRender }}
+            dataSource={true ? tableData : []}
+            size={"small"}
+          />
+        </div>
+      ) : (
+        <div style={{ marginTop: 25 }}>
+          <Table
+            bordered={false}
+            columns={columns}
+            dataSource={true ? tableData : []}
+            size={"small"}
+          />
+        </div>
+      )}
     </div>
   );
 };

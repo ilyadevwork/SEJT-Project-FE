@@ -1,4 +1,4 @@
-import snapshots from "../archive/jobs.json";
+import snapshots from "./jobs.json";
 import _ from "underscore";
 import * as fs from "fs";
 

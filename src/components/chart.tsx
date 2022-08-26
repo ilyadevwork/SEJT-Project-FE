@@ -1,9 +1,9 @@
-import { Line} from "@ant-design/charts";
+import { Line } from "@ant-design/charts";
 import React from "react";
-import { stateStore } from '../utility/state';
+import { stateStore } from "../store/state";
 
 const Chart: React.FC = () => {
-  const chartData = stateStore().chartData;
-  return <Line {...chartData} />
+  const chartData = stateStore((state) => state.chartData);
+  return <Line {...chartData} />;
 };
 export default Chart;

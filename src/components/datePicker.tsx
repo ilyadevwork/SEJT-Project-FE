@@ -1,25 +1,24 @@
 import { DatePicker, Space, Switch } from "antd";
 import moment from "moment";
 import React from "react";
-import { stateStore } from "../utility/state";
-import { disabledDate, firstDate } from "../utility/store";
+import { stateStore, disabledDate, initalDate } from "../store/state";
 import type { DatePickerProps, RangePickerProps } from "antd/es/date-picker";
-
+import { toggleActionType } from "../types/actionTypes";
 const { RangePicker } = DatePicker;
 
 const MyDatePicker: React.FC = () => {
-  const { setDate, isAggregate, setAggregation} = stateStore();
+  const setDate = stateStore((state) => state.setDate);
+  const isSeries = stateStore((state) => state.isSeries);
+  const dispatch = stateStore((state) => state.toggleDispatch);
 
   const onChange = (
     value: DatePickerProps["value"] | RangePickerProps["value"],
     dateString: [string, string] | string
   ) => {
-    if (isAggregate) {
-      console.log("I'm Agg")
-      if (value === null) 
-      console.log("Null Date");
-      else {
-        setDate([moment(dateString), moment(dateString)]);   
+    if (!isSeries) {
+      if (value === null) {
+      } else {
+        setDate([moment(dateString), moment(dateString)]);
       }
     } else {
       if (value === null) {
@@ -28,29 +27,33 @@ const MyDatePicker: React.FC = () => {
   };
 
   return (
-    <Space direction="horizontal" size={12}>
+    <Space direction="horizontal" size={24}>
       <Switch
-        defaultChecked={true}
-        checkedChildren="Single"
+        defaultChecked={false}
+        checkedChildren="Series"
         unCheckedChildren="Series"
-        onChange={(val) => setAggregation(val)}
+        onChange={(value) =>
+          dispatch({ type: toggleActionType.TOGGLE_SERIES, payload: value })
+        }
       ></Switch>
-      {isAggregate ? (
-        <DatePicker
-          onChange={onChange}
-          defaultPickerValue={firstDate![0]}
-          size={"small"}
-          allowClear={false}
-          disabledDate={disabledDate}
-          bordered={false}
-        />
-      ) : (
+      {isSeries ? (
         <RangePicker
           allowClear={false}
           size={"small"}
           disabledDate={disabledDate}
-          defaultPickerValue={firstDate}
+          defaultValue={initalDate}
+          defaultPickerValue={initalDate}
           onChange={onChange}
+          bordered={false}
+        />
+      ) : (
+        <DatePicker
+          onChange={onChange}
+          defaultPickerValue={initalDate![0]}
+          defaultValue={initalDate![0]}
+          size={"small"}
+          allowClear={false}
+          disabledDate={disabledDate}
           bordered={false}
         />
       )}

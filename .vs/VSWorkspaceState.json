@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\archive",
+    "\\documentation",
+    "\\public",
+    "\\src",
+    "\\src\\store"
+  ],
+  "SelectedNode": "\\src\\store\\state.ts",
+  "PreviewInSolutionExplorer": false
+}

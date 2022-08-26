@@ -1,29 +1,31 @@
-import Chart from "./components/chart";
-import { Layout } from "antd";
+import { Layout, Space, Button } from "antd";
 import { Col, Row } from "antd";
-import "antd/dist/antd.css";
-
+import "./App.css";
+import Chart from "./components/chart";
 import Selection from "./components/selector";
-import MyDatePicker from "./components/datePicker";
-import MyTable from "./components/table";
+import DatePicker from "./components/datePicker";
+import Table from "./components/table";
 
-const { Content } = Layout;
+const { Header, Footer, Sider, Content } = Layout;
 
-function App() {
+const App = () => {
   return (
-    <Layout style={{ margin: 35 }}>
+    <Layout style={{}}>
+      <Header></Header>
       <Content>
         <div style={{ margin: 16 }}>
           <Row>
             <Col span={24}>
               <Chart />
-              <MyDatePicker />
-              <Selection />
             </Col>
           </Row>
           <Row>
+            <Col span={24} style={{ marginRight: 50 }}>
+              <DatePicker />
+              <Selection />
+            </Col>
             <Col span={24}>
-            <MyTable></MyTable>
+              <Table />
             </Col>
           </Row>
         </div>

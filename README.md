@@ -25,7 +25,6 @@ For the purpose of development, a local dataset in the form of Jobs.json is curr
 * Reload on selection button does not do anything.
 
 
-
 ## Installation
 ```
 yarn install or npm install
