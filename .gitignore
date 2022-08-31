@@ -5,6 +5,7 @@
 /src/archive
 /.pnp
 .pnp.js
+/src/data
 
 # testing
 /coverage

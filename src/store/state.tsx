@@ -1,128 +1,122 @@
-import create from "zustand";
-import moment from "moment";
-import snapshots from "../data/jobs.json";
-import {
-  toggleAction,
-  dataAction,
-  toggleActionType,
-} from "../types/actionTypes";
-import { toggleActionReducer, dataUpdateReducer } from "./reducers";
-import type { RangePickerProps } from "antd/es/date-picker";
-import { Select } from "antd";
+import create from 'zustand'
+import moment from 'moment'
+import snapshots from '../data/jobs.json'
+import { toggleAction, dataAction, toggleActionType } from '../types/actionTypes'
+import { toggleActionReducer, dataActionReducer } from './reducers'
+import type { RangePickerProps } from 'antd/es/date-picker'
+import { Select } from 'antd'
 import {
   tableDataType,
   rootIdxType,
   branchIdxType,
   justObjects,
   Dictionary,
-} from "../types/utilityTypes";
+} from '../types/utilityTypes'
 
-const { Option } = Select;
+const { Option } = Select
 
 interface chartConfig {
-  data: any;
-  xField: string;
-  yField: string;
-  seriesField: string;
-  smooth: boolean;
-  slider: {};
-  theme: string;
-  category?: string;
+  data: any
+  xField: string
+  yField: string
+  seriesField: string
+  smooth: boolean
+  slider: any
+  theme: string
+  category?: string
   label: {
     style: {
-      fill: string;
-    };
-  };
-  point:any,
+      fill: string
+    }
+  }
+  point: any
 }
 
 export interface configState {
-  chartData: chartConfig;
-  tableData: tableDataType[];
-  category: string;
-  selectedSubCategories: string[];
-  selectedTechnologies: number[];
-  selectedDate: [moment.Moment, moment.Moment];
-  currentSnapshot: number;
-  currentSnapshotSeries: number[];
-  isSeries: boolean;
-  isAggregate: boolean;
-  isAllTechChecked: boolean;
-  routeID: number;
-  availableSubCategories: React.ReactNode[];
-  availableTechnologies: React.ReactNode[];
-  currentTechCache: Dictionary<Array<string>>;
-  setCategory: (str: string) => void;
-  setSelectedSubCategories: (entry: string[]) => void;
-  setDate: (entry: [moment.Moment, moment.Moment]) => void;
-  setCurrentSnapshot: (entry: number) => void;
-  setCurrentSeries: (entry: number[]) => void;
-  toggleDispatch: (action: toggleAction) => void;
-  updateChartDispatch: (action: dataAction) => void;
-  updateSubCategoryOptions: (arg?: string) => void;
-  updateTechnologiesOptions: (arg: string[]) => void;
+  chartData: chartConfig
+  tableData: tableDataType[]
+  category: string
+  selectedSubCategories: string[]
+  selectedTechnologies: number[]
+  selectedDate: [moment.Moment, moment.Moment]
+  currentSnapshot: number
+  currentSnapshotSeries: number[]
+  isSeries: boolean
+  isAggregate: boolean
+  isAllTechChecked: boolean
+  routeID: number
+  availableSubCategories: React.ReactNode[]
+  availableTechnologies: React.ReactNode[]
+  currentTechCache: Dictionary<Array<string>>
+  setCategory: (str: string) => void
+  setSelectedSubCategories: (entry: string[]) => void
+  setDate: (entry: [moment.Moment, moment.Moment]) => void
+  setCurrentSnapshot: (entry: number) => void
+  setCurrentSeries: (entry: number[]) => void
+  toggleDispatch: (action: toggleAction) => void
+  dataDispatch: (action: dataAction) => void
+  updateSubCategoryOptions: (arg?: string) => void
+  updateTechnologiesOptions: (arg: string[]) => void
 }
 
 export const stateStore = create<configState>((set, get) => ({
   routeID: 2,
-  category: "",
+  category: '',
   setCategory: (str) => {
-    set((state) => ({ category: str }));
+    set((state) => ({ category: str }))
 
-    const isSeries = get().isSeries;
+    const isSeries = get().isSeries
 
     if (!isSeries) {
-      const selectedSnap = get().currentSnapshot;
-      const category = get().category as keyof rootIdxType;
+      const selectedSnap = get().currentSnapshot
+      const category = get().category as keyof rootIdxType
 
       set((state) => ({
         chartData: {
           ...state.chartData,
           data: snapshots[selectedSnap].techRoot[category],
         },
-      }));
+      }))
 
-      let marketShareTotal = 0;
-      let temptableData: tableDataType[] = [];
+      let marketShareTotal = 0
+      let temptableData: tableDataType[] = []
 
-      for (const obj of get().chartData.data)
-        marketShareTotal = marketShareTotal + obj.value;
+      for (const obj of get().chartData.data) marketShareTotal = marketShareTotal + obj.value
 
       for (const [idx, entry] of get().chartData.data.entries()) {
         temptableData.push({
           key: idx,
           ...entry,
           marketshare: ((entry.value / marketShareTotal) * 100).toFixed(2),
-        });
+        })
       }
 
-      set((state) => ({ tableData: temptableData }));
+      set((state) => ({ tableData: temptableData }))
     } else {
-      if (get().selectedSubCategories.length > 0)
-        set((state) => ({ selectedSubCategories: [] }));
+      if (get().selectedSubCategories.length > 0) set((state) => ({ selectedSubCategories: [] }))
     }
   },
   isSeries: false,
   selectedSubCategories: [],
   setSelectedSubCategories: (entry) => {
-    const tempSubCatagories = get().selectedSubCategories;
+    const tempSubCatagories = get().selectedSubCategories
 
     if (entry.length > tempSubCatagories.length) {
-      set((state) => ({ selectedSubCategories: entry }));
-      const tempSubCatagories = get().selectedSubCategories;
-      const currentSeries = get().currentSnapshotSeries;
-      const category = get().category as keyof rootIdxType;
+      set((state) => ({ selectedSubCategories: entry }))
+      const tempSubCatagories = get().selectedSubCategories
+      const currentSeries = get().currentSnapshotSeries
+      const category = get().category as keyof rootIdxType
 
-      let marketShareTotal = 0;
-      let keyPool = 0;
-      let temptableData: tableDataType[] = [];
-      let tempChartData: object[] = [];
+      let marketShareTotal = 0
+      let keyPool = 0
+      let temptableData: tableDataType[] = []
+      let tempChartData: object[] = []
       // We can just search the aggregate data when it comes to listings.
       for (let i = 0; i < currentSeries.length; i++) {
         // iterate through all the selected days in between start and finish by thier index in our data.
         for (let j = 0; j < tempSubCatagories.length; j++) {
           // iterate through every selected category
-          const data: any = snapshots[currentSeries[i]].techRoot[category];
+          const data: any = snapshots[currentSeries[i]].techRoot[category]
           // search that day's data for the category and retrieve its value
           data.find((val: any) => {
             // push data to temp array. x axis will be date.
@@ -131,42 +125,42 @@ export const stateStore = create<configState>((set, get) => ({
                 identifier: snapshots[currentSeries[i]].date.slice(0, 10),
                 value: val.value,
                 category: val.identifier,
-              });
+              })
               temptableData.push({
                 identifier: snapshots[currentSeries[i]].date.slice(0, 10),
                 key: keyPool++,
                 category: val.identifier,
                 marketshare: 0,
                 value: val.value,
-              });
+              })
             }
-          });
+          })
         }
       }
       set((state) => ({
         chartData: {
           ...state.chartData,
           data: tempChartData,
-          seriesField: "category",
+          seriesField: 'category',
         },
         tableData: temptableData,
-      }));
+      }))
     } else {
-      const currSubCatagories = get().selectedSubCategories;
+      const currSubCatagories = get().selectedSubCategories
 
       const exclusion = currSubCatagories.filter((ele) => {
-        if (!entry.includes(ele)) return ele;
-      });
+        if (!entry.includes(ele)) return ele
+      })
 
-      set((state) => ({ selectedSubCategories: entry }));
+      set((state) => ({ selectedSubCategories: entry }))
 
       // Copy current data set.
-      const dataPtr = get().chartData.data;
-      let filteredData: any = [{}];
+      const dataPtr = get().chartData.data
+      let filteredData: any = [{}]
 
       // Conditionally exclude the removed element.
       for (let i = 0; i < dataPtr.length; i++) {
-        if (dataPtr[i].category !== exclusion[0]) filteredData.push(dataPtr[i]);
+        if (dataPtr[i].category !== exclusion[0]) filteredData.push(dataPtr[i])
       }
 
       // Clear category after dataset is empty so that chart artifacts are removed.
@@ -175,35 +169,35 @@ export const stateStore = create<configState>((set, get) => ({
           chartData: {
             ...state.chartData,
             data: filteredData,
-            seriesField: "category",
+            seriesField: 'category',
           },
-        }));
+        }))
       else {
         set((state) => ({
           chartData: {
             ...state.chartData,
             data: [{}],
-            seriesField: "",
+            seriesField: '',
           },
-        }));
+        }))
       }
     }
   },
   selectedTechnologies: [],
   chartData: {
     data: [{}],
-    theme: "default", // 'dark',
-    seriesField: "",
+    theme: 'default', // 'dark',
+    seriesField: '',
     slider: {
       start: 0,
       end: 1,
     },
-    xField: "identifier",
-    yField: "value",
+    xField: 'identifier',
+    yField: 'value',
     smooth: true,
     label: {
       style: {
-        fill: "#aaa",
+        fill: '#aaa',
       },
     },
     point: {
@@ -219,122 +213,114 @@ export const stateStore = create<configState>((set, get) => ({
   tableData: [],
   selectedDate: [moment(null), moment(null)],
   setDate: (entry) => {
-    set((state) => ({ selectedDate: entry }));
+    set((state) => ({ selectedDate: entry }))
 
-    const isSeries = get().isSeries;
-    const category = get().category as keyof rootIdxType;
-    const isAggregate = get().isAggregate;
-    const isAllTechChecked = get().isAllTechChecked;
-    const selectedSubCategories = get().selectedSubCategories;
+    const isSeries = get().isSeries
+    const category = get().category as keyof rootIdxType
+    const isAggregate = get().isAggregate
+    const isAllTechChecked = get().isAllTechChecked
+    const selectedSubCategories = get().selectedSubCategories
 
     if (!isSeries) {
       if (isAggregate) {
-        if (category.toString() !== "") {
+        if (category.toString() !== '') {
           // Not series true, aggregate true & category is selected.
           // Formatting the date so it may be compared.
-          const formattedEntry = entry[0].format("YYYY-MM-DD");
+          const formattedEntry = entry[0].format('YYYY-MM-DD')
 
           for (let i = 0; i < snapshots.length; i++) {
             if (
               // searching for a match in the selected date, and those that exist in the data set.
-              formattedEntry === moment(snapshots[i].date).format("YYYY-MM-DD")
+              formattedEntry === moment(snapshots[i].date).format('YYYY-MM-DD')
             )
-              get().setCurrentSnapshot(i);
+              get().setCurrentSnapshot(i)
           }
 
-          const selectedSnap = get().currentSnapshot;
+          const selectedSnap = get().currentSnapshot
 
           set((state) => ({
             chartData: {
               ...state.chartData,
               data: snapshots[selectedSnap].techRoot[category],
             },
-          }));
+          }))
 
-          let marketShareTotal = 0;
-          let temptableData: tableDataType[] = [];
+          let marketShareTotal = 0
+          let temptableData: tableDataType[] = []
 
-          for (let obj of get().chartData.data)
-            marketShareTotal = marketShareTotal + obj.value;
+          for (let obj of get().chartData.data) marketShareTotal = marketShareTotal + obj.value
 
           for (let [idx, entry] of get().chartData.data.entries()) {
             temptableData.push({
               key: idx,
               ...entry,
               marketShare: ((entry.value / marketShareTotal) * 100).toFixed(2),
-            });
+            })
           }
-          set((state) => ({ tableData: temptableData }));
+          set((state) => ({ tableData: temptableData }))
         } else {
           // If catagories is empty just update the selected snapshot.
-          const formattedEntry = entry[0].format("YYYY-MM-DD");
+          const formattedEntry = entry[0].format('YYYY-MM-DD')
 
           for (let i = 0; i < snapshots.length; i++) {
-            if (
-              formattedEntry === moment(snapshots[i].date).format("YYYY-MM-DD")
-            )
-              get().setCurrentSnapshot(i);
+            if (formattedEntry === moment(snapshots[i].date).format('YYYY-MM-DD'))
+              get().setCurrentSnapshot(i)
           }
         }
       } else {
         // Empty catagory selection check.
-        if (category.toString() !== "") {
+        if (category.toString() !== '') {
           // Not series true, aggregate false & category is selected.
-          if (selectedSubCategories.length !== 0)
-            set((state) => ({ selectedDate: entry }));
+          if (selectedSubCategories.length !== 0) set((state) => ({ selectedDate: entry }))
 
-          const formattedEntry = entry[0].format("YYYY-MM-DD");
+          const formattedEntry = entry[0].format('YYYY-MM-DD')
 
           for (let i = 0; i < snapshots.length; i++) {
             if (
               // searching for a match in the selected date, and those that exist in the data set.
-              formattedEntry === moment(snapshots[i].date).format("YYYY-MM-DD")
+              formattedEntry === moment(snapshots[i].date).format('YYYY-MM-DD')
             )
-              get().setCurrentSnapshot(i);
+              get().setCurrentSnapshot(i)
           }
 
-          const selectedSnap = get().currentSnapshot;
+          const selectedSnap = get().currentSnapshot
 
           if (isAllTechChecked === true) {
           }
         } else {
           // If catagories is empty just update the selected snapshot.
-          const formattedEntry = entry[0].format("YYYY-MM-DD");
+          const formattedEntry = entry[0].format('YYYY-MM-DD')
 
           for (let i = 0; i < snapshots.length; i++) {
-            if (
-              formattedEntry === moment(snapshots[i].date).format("YYYY-MM-DD")
-            )
-              get().setCurrentSnapshot(i);
+            if (formattedEntry === moment(snapshots[i].date).format('YYYY-MM-DD'))
+              get().setCurrentSnapshot(i)
           }
         }
       }
     } else {
       if (get().selectedSubCategories.length > 1) {
-        set((state) => ({ selectedDate: entry }));
-        const tempSeries: number[] = [];
+        set((state) => ({ selectedDate: entry }))
+        const tempSeries: number[] = []
 
         for (let i = 0; i < snapshots.length; i++) {
           if (
-            moment(snapshots[i].date).format("YYYY-MM-DD") >=
-              entry[0].format("YYYY-MM-DD") &&
-            moment(snapshots[i].date).format("YYYY-MM-DD") <=
-              entry[1].format("YYYY-MM-DD")
+            moment(snapshots[i].date).format('YYYY-MM-DD') >= entry[0].format('YYYY-MM-DD') &&
+            moment(snapshots[i].date).format('YYYY-MM-DD') <= entry[1].format('YYYY-MM-DD')
           ) {
-            tempSeries.push(i);
+            tempSeries.push(i)
           }
         }
-        get().setCurrentSeries(tempSeries);
+        get().setCurrentSeries(tempSeries)
 
-        const tempCatagories = get().selectedSubCategories;
+        const tempCatagories = get().selectedSubCategories
 
-        let tempChartData: object[] = [];
+        let tempChartData: object[] = []
         // We can just search the aggregate data when it comes to listings.
         for (let j = 0; j < tempCatagories.length; j++) {
           // iterate through all the selected days in between start and finish by thier index in our data.
           for (let i = 0; i < tempSeries.length; i++) {
             // iterate through every selected category
-            const data: any = snapshots[tempSeries[i]].techRoot[category];
+            const data: any = snapshots[tempSeries[i]].techRoot[category]
             // search that day's data for the category and retrieve its value
             data.find((val: any) => {
               // push data to temp array. x axis will be date.
@@ -343,160 +329,147 @@ export const stateStore = create<configState>((set, get) => ({
                   identifier: snapshots[tempSeries[i]].date.slice(0, 10),
                   value: val.value,
                   category: val.identifier,
-                });
+                })
               }
-            });
+            })
           }
         }
         set((state) => ({
           chartData: {
             ...state.chartData,
             data: tempChartData,
-            seriesField: "category",
+            seriesField: 'category',
           },
-        }));
+        }))
       } else {
-        set((state) => ({ selectedDate: entry }));
-        const tempSeries: number[] = [];
+        set((state) => ({ selectedDate: entry }))
+        const tempSeries: number[] = []
 
         for (let i = 0; i < snapshots.length; i++) {
           if (
-            moment(snapshots[i].date).format("YYYY-MM-DD") >=
-              entry[0].format("YYYY-MM-DD") &&
-            moment(snapshots[i].date).format("YYYY-MM-DD") <=
-              entry[1].format("YYYY-MM-DD")
+            moment(snapshots[i].date).format('YYYY-MM-DD') >= entry[0].format('YYYY-MM-DD') &&
+            moment(snapshots[i].date).format('YYYY-MM-DD') <= entry[1].format('YYYY-MM-DD')
           ) {
-            tempSeries.push(i);
+            tempSeries.push(i)
           }
         }
-        get().setCurrentSeries(tempSeries);
+        get().setCurrentSeries(tempSeries)
       }
     }
   },
   currentSnapshot: 0,
   setCurrentSnapshot: (entry) => set((state) => ({ currentSnapshot: entry })),
   currentSnapshotSeries: [0, 1],
-  setCurrentSeries: (entry) =>
-    set((state) => ({ currentSnapshotSeries: entry })),
+  setCurrentSeries: (entry) => set((state) => ({ currentSnapshotSeries: entry })),
   isAggregate: true,
   isAllTechChecked: true,
   toggleDispatch(action: toggleAction) {
-    set((state) => toggleActionReducer(state, action));
+    set((state) => toggleActionReducer(state, action))
   },
-  updateChartDispatch(action: dataAction) {
-    set((state) => dataUpdateReducer(state, get().routeID, action)!);
+  dataDispatch(action: dataAction) {
+    set((state) => dataActionReducer(state, get().routeID, action) ?? state)
   },
   availableSubCategories: [],
   availableTechnologies: [],
   updateSubCategoryOptions(arg?: string) {
-    const agg = get().isAggregate;
-    let category: string;
+    const agg = get().isAggregate
+    let category: string
 
-    if (arg) category = arg;
-    else category = get().category;
+    if (arg) category = arg
+    else category = get().category
 
-    const currentSnapshot = get().currentSnapshot;
+    const currentSnapshot = get().currentSnapshot
 
     if (agg === false) {
-      const selection = category as branchIdxType;
-      const subCategoryOptions: React.ReactNode[] = [];
-      const seenIdx: Dictionary<number> = {};
-      const techCache: Dictionary<Array<string>> = {};
-      const categorycache: string[] = [];
+      const selection = category as branchIdxType
+      const subCategoryOptions: React.ReactNode[] = []
+      const seenIdx: Dictionary<number> = {}
+      const techCache: Dictionary<Array<string>> = {}
+      const categorycache: string[] = []
 
       for (let i = 0; i < snapshots[currentSnapshot].techBranch.length; i++) {
-        const data: any = snapshots[currentSnapshot].techBranch[i][selection];
+        const data: any = snapshots[currentSnapshot].techBranch[i][selection]
         for (const d of data) {
           if (seenIdx[d.identifier] === undefined) {
-            techCache[d.identifier] = [];
-            seenIdx[d.identifier] = 1;
-            categorycache.push(d.identifier);
-            techCache[d.identifier].push(
-              snapshots[currentSnapshot].techBranch[i].name
-            );
+            techCache[d.identifier] = []
+            seenIdx[d.identifier] = 1
+            categorycache.push(d.identifier)
+            techCache[d.identifier].push(snapshots[currentSnapshot].techBranch[i].name)
           } else {
-            seenIdx[d.identifier]++;
-            techCache[d.identifier].push(
-              snapshots[currentSnapshot].techBranch[i].name
-            );
+            seenIdx[d.identifier]++
+            techCache[d.identifier].push(snapshots[currentSnapshot].techBranch[i].name)
           }
         }
       }
 
-      if (selection === "salaryEst") {
+      if (selection === 'salaryEst') {
         categorycache.sort((a, b) =>
-          parseInt(a.substring(1, 4)) > parseInt(b.substring(1, 4)) ? 1 : -1
-        );
+          parseInt(a.substring(1, 4)) > parseInt(b.substring(1, 4)) ? 1 : -1,
+        )
       }
 
       for (const entry of categorycache) {
-        subCategoryOptions.push(
-          <Option key={entry}>{entry + " (" + seenIdx[entry] + ")"}</Option>
-        );
+        subCategoryOptions.push(<Option key={entry}>{entry + ' (' + seenIdx[entry] + ')'}</Option>)
       }
 
       set((state) => ({
         availableSubCategories: subCategoryOptions,
         currentTechCache: techCache,
-      }));
+      }))
     } else {
-      const selection = category as keyof rootIdxType;
-      const data: any = snapshots[currentSnapshot].techRoot[selection];
-      const subCategoryOptions: React.ReactNode[] = [];
+      const selection = category as keyof rootIdxType
+      const data: any = snapshots[currentSnapshot].techRoot[selection]
+      const subCategoryOptions: React.ReactNode[] = []
       for (const i of data) {
-        subCategoryOptions.push(
-          <Option key={i.identifier}>{i.identifier}</Option>
-        );
+        subCategoryOptions.push(<Option key={i.identifier}>{i.identifier}</Option>)
       }
-      set((state) => ({ availableSubCategories: subCategoryOptions }));
+      set((state) => ({ availableSubCategories: subCategoryOptions }))
     }
   },
   updateTechnologiesOptions(arg: string[]) {
-    const techCache = get().currentTechCache;
-    const currTechnologies = get().availableTechnologies;
-    const selectedSubCategories = arg;
-    const seenIdx: Dictionary<string> = {};
-    const newTechnologies: React.ReactNode[] = [];
+    const techCache = get().currentTechCache
+    const currTechnologies = get().availableTechnologies
+    const selectedSubCategories = arg
+    const seenIdx: Dictionary<string> = {}
+    const newTechnologies: React.ReactNode[] = []
 
-      selectedSubCategories.map((element) => {
-        for (let i = 0; i < techCache[element].length; i++) {
-          const currIteration = techCache[element][i];
-          if (seenIdx[currIteration] === undefined)
-            seenIdx[currIteration] = currIteration;
-        }
-      }); 
-
-      for (const item in seenIdx) {
-        newTechnologies.push(<Option key={item}>{item}</Option>);
+    selectedSubCategories.map((element) => {
+      for (let i = 0; i < techCache[element].length; i++) {
+        const currIteration = techCache[element][i]
+        if (seenIdx[currIteration] === undefined) seenIdx[currIteration] = currIteration
       }
-      set((state) => ({ availableTechnologies: newTechnologies }));
+    })
+
+    for (const item in seenIdx) {
+      newTechnologies.push(<Option key={item}>{item}</Option>)
+    }
+    set((state) => ({ availableTechnologies: newTechnologies }))
   },
   currentTechCache: {},
-}));
+}))
 
-export const initalDate: RangePickerProps["defaultPickerValue"] = [
+export const initalDate: RangePickerProps['defaultPickerValue'] = [
   moment(snapshots[0].date),
   moment(snapshots[1].date),
-];
+]
 
-export const disabledDate: RangePickerProps["disabledDate"] = (current) => {
+export const disabledDate: RangePickerProps['disabledDate'] = (current) => {
   if (current === null) {
-    console.log("foo");
+    console.log('foo')
   }
   if (
     snapshots.find(
-      (obj) =>
-        moment(obj.date).format("YYYY-MM-DD") === current.format("YYYY-MM-DD")
+      (obj) => moment(obj.date).format('YYYY-MM-DD') === current.format('YYYY-MM-DD'),
     ) !== undefined
   )
-    return false;
-  else return true;
-};
+    return false
+  else return true
+}
 
 export function buildTechIndex(curSnap: any): Dictionary<number> {
-  let index: Dictionary<number> = {};
+  let index: Dictionary<number> = {}
   for (let i = 0; i < snapshots[curSnap].techBranch.length; i++)
-    index[snapshots[curSnap].techBranch[i].name] = i;
+    index[snapshots[curSnap].techBranch[i].name] = i
 
-  return index;
+  return index
 }
