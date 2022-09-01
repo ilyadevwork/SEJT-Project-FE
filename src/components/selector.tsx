@@ -7,22 +7,44 @@ import { dataActionType, toggleActionType } from '../types/actionTypes'
 const { Option } = Select
 
 const Selection: React.FC = () => {
-  const isSeries = stateStore((state) => state.isSeries)
-  const isAggregate = stateStore((state) => state.isAggregate)
-  const isAllTechChecked = stateStore((state) => state.isAllTechChecked)
+  const {
+    isSeries,
+    isAggregate,
+    isAllTechChecked,
+    toggleActionDispatch,
+    currentSnapshot,
+    selectableSubCategories,
+    selectableTechnologies,
+    selectedTechnologies,
+    dataActionDispatch,
+  } = stateStore((state) => ({
+    isSeries: state.isSeries,
+    isAggregate: state.isAggregate,
+    isAllTechChecked: state.isAllTechChecked,
+    toggleActionDispatch: state.toggleDispatch,
+    dataActionDispatch: state.dataDispatch,
+    currentSnapshot: state.currentSnapshot,
+    selectableSubCategories: state.selectableSubCategories,
+    selectableTechnologies: state.selectableTechnologies,
+    selectedTechnologies: state.selectedTechnologies,
+  }))
+
   const [agg, SetAgg] = useState<boolean>(true)
   const [tech, SetTech] = useState<boolean>(true)
-  const dataActionDispatch = stateStore((state) => state.dataDispatch)
-  const toggleActionDispatch = stateStore((state) => state.toggleDispatch)
-  const currentSnapshot = stateStore((state) => state.currentSnapshot)
-  const availableSubCategories = stateStore((state) => state.availableSubCategories)
-  const availableTechnologies = stateStore((state) => state.availableTechnologies)
-
-  const [categoryHistory, setCategoryHistory] = useState<any>(null)
-  const [subHistory, setHistory] = useState<string[]>([])
+  const [categoryHistory, setCategoryHistory] = useState<string | null>(null)
+  const [subCategoryHistory, setSubCategoryHistory] = useState<string[]>([])
   const [techHistory, setTechHistory] = useState<string[]>([])
-
+  
   const techIdx: Dictionary<number> = buildTechIndex(currentSnapshot)
+  const subCategoryFiltered = selectableSubCategories.filter(
+    option => !subCategoryHistory.includes(option.identifier),
+  )
+  const technologiesFiltered = selectableTechnologies.filter(
+    option => !techHistory.includes(option)
+  )
+
+  const isSubCategoryMax = subCategoryHistory.length ? true : false
+  const isTechMax = selectedTechnologies.length > 4 ? true : false
 
   return (
     <Space>
@@ -37,7 +59,7 @@ const Selection: React.FC = () => {
                 type: dataActionType.SET_CATEGORY,
                 payload: value,
               })
-              setHistory([])
+              setSubCategoryHistory([])
               setCategoryHistory(value)
             }}
           >
@@ -52,19 +74,27 @@ const Selection: React.FC = () => {
           </Select>
           <Select
             mode={'multiple'}
-            value={subHistory}
+            value={subCategoryHistory}
             bordered={false}
-            style={{ minWidth: 150 }}
+            style={{ minWidth: 250 }}
             placeholder='Select Sub Catagory'
             onChange={(value) => {
               dataActionDispatch({
                 type: dataActionType.SET_SUBCATEGORIES,
                 payload: value,
               })
-              setHistory(value)
+              setSubCategoryHistory(value)
             }}
           >
-            {availableSubCategories}
+            {subCategoryFiltered.map(item => (
+              <Option
+                key={item.identifier}
+                value={item.identifier}
+                disabled={isSubCategoryMax}
+              >
+                {item.identifier}
+              </Option>
+            ))}
           </Select>
         </>
       ) : (
@@ -79,7 +109,7 @@ const Selection: React.FC = () => {
                 type: toggleActionType.TOGGLE_AGGREGATION,
                 payload: value,
               })
-              setHistory([])
+              setSubCategoryHistory([])
               setCategoryHistory(null)
             }}
           ></Switch>
@@ -96,7 +126,7 @@ const Selection: React.FC = () => {
                     payload: value,
                   })
                   setCategoryHistory(value)
-                  setHistory([])
+                  setSubCategoryHistory([])
                 }}
               >
                 <Option value='salaryEst'>Salary Estimates</Option>
@@ -109,19 +139,27 @@ const Selection: React.FC = () => {
               </Select>
               <Select
                 mode={'multiple'}
-                value={subHistory}
+                value={subCategoryHistory}
                 bordered={false}
-                style={{ minWidth: 150 }}
-                placeholder='Sub Catagory'
+                style={{ minWidth: 250 }}
+                placeholder='Select Sub Catagory'
                 onChange={(value) => {
                   dataActionDispatch({
                     type: dataActionType.SET_SUBCATEGORIES,
                     payload: value,
                   })
-                  setHistory(value)
+                  setSubCategoryHistory(value)
                 }}
               >
-                {availableSubCategories}
+                {subCategoryFiltered.map((item) => (
+                  <Option
+                    key={item.identifier}
+                    value={item.identifier}
+                    disabled={isSubCategoryMax}
+                  >
+                    {item.identifier + ' (' + item.occurences + ')'}
+                  </Option>
+                ))}
               </Select>
               <Switch
                 defaultChecked={true}
@@ -143,22 +181,28 @@ const Selection: React.FC = () => {
                     bordered={false}
                     style={{ minWidth: 150 }}
                     placeholder='Select Technologies'
-                    onChange={(selection) => {
-                      const tempResult = []
-
+                    onChange={(selection: string[]) => {
                       if (selection.length !== 0) {
-                        for (let i = 0; i < selection.length; i++) {
-                          tempResult.push(techIdx[selection[i]])
-                        }
-                      }
+                        const result: number[] = selection.map((item: string) => techIdx[item])
 
-                      dataActionDispatch({
-                        type: dataActionType.SET_TECHNOLOGIES,
-                        payload: tempResult,
-                      })
+                        dataActionDispatch({
+                          type: dataActionType.SET_TECHNOLOGIES,
+                          payload: result,
+                        })
+
+                        setTechHistory(selection);
+                      }
                     }}
                   >
-                    {availableTechnologies}
+                    {technologiesFiltered.map((item) => (
+                      <Option
+                        key={item}
+                        value={item}
+                        disabled={isTechMax}
+                      >
+                        {item}
+                      </Option>
+                    ))}
                   </Select>
                 </>
               ) : (

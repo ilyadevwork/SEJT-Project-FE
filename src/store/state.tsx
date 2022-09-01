@@ -30,6 +30,12 @@ interface chartConfig {
     }
   }
   point: any
+  isGroup: any
+}
+
+interface optionWithTallyType {
+  identifier: string
+  occurences?: number
 }
 
 export interface configState {
@@ -45,10 +51,9 @@ export interface configState {
   isAggregate: boolean
   isAllTechChecked: boolean
   routeID: number
-  availableSubCategories: React.ReactNode[]
-  availableTechnologies: React.ReactNode[]
+  selectableSubCategories: optionWithTallyType[]
+  selectableTechnologies: string[]
   currentTechCache: Dictionary<Array<string>>
-  setCategory: (str: string) => void
   setSelectedSubCategories: (entry: string[]) => void
   setDate: (entry: [moment.Moment, moment.Moment]) => void
   setCurrentSnapshot: (entry: number) => void
@@ -62,40 +67,6 @@ export interface configState {
 export const stateStore = create<configState>((set, get) => ({
   routeID: 2,
   category: '',
-  setCategory: (str) => {
-    set((state) => ({ category: str }))
-
-    const isSeries = get().isSeries
-
-    if (!isSeries) {
-      const selectedSnap = get().currentSnapshot
-      const category = get().category as keyof rootIdxType
-
-      set((state) => ({
-        chartData: {
-          ...state.chartData,
-          data: snapshots[selectedSnap].techRoot[category],
-        },
-      }))
-
-      let marketShareTotal = 0
-      let temptableData: tableDataType[] = []
-
-      for (const obj of get().chartData.data) marketShareTotal = marketShareTotal + obj.value
-
-      for (const [idx, entry] of get().chartData.data.entries()) {
-        temptableData.push({
-          key: idx,
-          ...entry,
-          marketshare: ((entry.value / marketShareTotal) * 100).toFixed(2),
-        })
-      }
-
-      set((state) => ({ tableData: temptableData }))
-    } else {
-      if (get().selectedSubCategories.length > 0) set((state) => ({ selectedSubCategories: [] }))
-    }
-  },
   isSeries: false,
   selectedSubCategories: [],
   setSelectedSubCategories: (entry) => {
@@ -201,7 +172,7 @@ export const stateStore = create<configState>((set, get) => ({
       },
     },
     point: {
-      size: 5,
+      size: 3,
       shape: 'diamond',
       style: {
         fill: 'white',
@@ -209,6 +180,7 @@ export const stateStore = create<configState>((set, get) => ({
         lineWidth: 2,
       },
     },
+    isGroup: true,
   },
   tableData: [],
   selectedDate: [moment(null), moment(null)],
@@ -369,20 +341,20 @@ export const stateStore = create<configState>((set, get) => ({
   dataDispatch(action: dataAction) {
     set((state) => dataActionReducer(state, get().routeID, action) ?? state)
   },
-  availableSubCategories: [],
-  availableTechnologies: [],
-  updateSubCategoryOptions(arg?: string) {
+  selectableSubCategories: [],
+  selectableTechnologies: [],
+  updateSubCategoryOptions(newCategory?: string) {
     const agg = get().isAggregate
     let category: string
 
-    if (arg) category = arg
+    if (newCategory) category = newCategory
     else category = get().category
 
     const currentSnapshot = get().currentSnapshot
 
     if (agg === false) {
       const selection = category as branchIdxType
-      const subCategoryOptions: React.ReactNode[] = []
+      let subCategoryOptions: optionWithTallyType[] = []
       const seenIdx: Dictionary<number> = {}
       const techCache: Dictionary<Array<string>> = {}
       const categorycache: string[] = []
@@ -409,31 +381,29 @@ export const stateStore = create<configState>((set, get) => ({
       }
 
       for (const entry of categorycache) {
-        subCategoryOptions.push(<Option key={entry}>{entry + ' (' + seenIdx[entry] + ')'}</Option>)
+        subCategoryOptions.push({ identifier: entry, occurences: seenIdx[entry] })
       }
 
       set((state) => ({
-        availableSubCategories: subCategoryOptions,
+        selectableSubCategories: subCategoryOptions,
         currentTechCache: techCache,
       }))
     } else {
       const selection = category as keyof rootIdxType
       const data: any = snapshots[currentSnapshot].techRoot[selection]
-      const subCategoryOptions: React.ReactNode[] = []
+      const subCategoryOptions: optionWithTallyType[] = []
       for (const i of data) {
-        subCategoryOptions.push(<Option key={i.identifier}>{i.identifier}</Option>)
+        subCategoryOptions.push({ identifier: i })
       }
-      set((state) => ({ availableSubCategories: subCategoryOptions }))
+      set((state) => ({ selectableSubCategories: subCategoryOptions }))
     }
   },
-  updateTechnologiesOptions(arg: string[]) {
+  updateTechnologiesOptions(selectedSubCategories: string[]) {
     const techCache = get().currentTechCache
-    const currTechnologies = get().availableTechnologies
-    const selectedSubCategories = arg
     const seenIdx: Dictionary<string> = {}
-    const newTechnologies: React.ReactNode[] = []
+    const newTechOptions: string[] = []
 
-    selectedSubCategories.map((element) => {
+    selectedSubCategories.forEach((element) => {
       for (let i = 0; i < techCache[element].length; i++) {
         const currIteration = techCache[element][i]
         if (seenIdx[currIteration] === undefined) seenIdx[currIteration] = currIteration
@@ -441,11 +411,12 @@ export const stateStore = create<configState>((set, get) => ({
     })
 
     for (const item in seenIdx) {
-      newTechnologies.push(<Option key={item}>{item}</Option>)
+      newTechOptions.push(item)
     }
-    set((state) => ({ availableTechnologies: newTechnologies }))
+    set(() => ({ selectableTechnologies: newTechOptions }))
   },
   currentTechCache: {},
+  selectableTechnologiesAsString: [],
 }))
 
 export const initalDate: RangePickerProps['defaultPickerValue'] = [
