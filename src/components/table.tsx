@@ -1,28 +1,31 @@
-import { DownOutlined, SearchOutlined } from '@ant-design/icons'
-import { Badge, Button, Dropdown, Input, Menu, Progress, Select, Space, Table } from 'antd'
-import React, { useRef, useState } from 'react'
-import Highlighter from 'react-highlight-words'
-import type { ColumnsType, ColumnType } from 'antd/lib/table'
-import type { FilterConfirmProps } from 'antd/lib/table/interface'
-import type { InputRef } from 'antd/lib/index'
-import { stateStore } from '../store/state'
-const { Option } = Select
+import { DownOutlined, SearchOutlined } from '@ant-design/icons';
+import {
+  Badge, Button, Dropdown, Input, Menu, Progress, Select, Space, Table,
+} from 'antd';
+import React, { useRef, useState } from 'react';
+import Highlighter from 'react-highlight-words';
+import type { ColumnsType, ColumnType } from 'antd/lib/table';
+import type { FilterConfirmProps } from 'antd/lib/table/interface';
+import type { InputRef } from 'antd/lib/index';
+import { stateStore } from '../store/state';
+
+const { Option } = Select;
 
 interface DataType {
-  key: React.Key
-  identifier: string
-  category?: string
-  marketshare: number
-  value: number
+  key: React.Key;
+  identifier: string;
+  category?: string;
+  marketshare: number;
+  value: number;
 }
 
-type DataIndex = keyof DataType
+type DataIndex = keyof DataType;
 
 interface ExpandedDataType {
-  key: React.Key
-  date: string
-  name: string
-  upgradeNum: string
+  key: React.Key;
+  date: string;
+  name: string;
+  upgradeNum: string;
 }
 
 const menu = (
@@ -32,11 +35,11 @@ const menu = (
       { key: '2', label: 'Action 2' },
     ]}
   />
-)
+);
 
 const MyTable: React.FC = () => {
-  const tableData = stateStore((state) => state.tableData)
-  const isSeries = stateStore((state) => state.isSeries)
+  const tableData = stateStore((state) => state.tableData);
+  const isSeries = stateStore((state) => state.isSeries);
 
   const expandedRowRender = () => {
     const columns: ColumnsType<ExpandedDataType> = [
@@ -47,7 +50,7 @@ const MyTable: React.FC = () => {
         key: 'state',
         render: () => (
           <span>
-            <Badge status='success' />
+            <Badge status="success" />
             Finished
           </span>
         ),
@@ -58,7 +61,7 @@ const MyTable: React.FC = () => {
         dataIndex: 'operation',
         key: 'operation',
         render: () => (
-          <Space size='middle'>
+          <Space size="middle">
             <a>Pause</a>
             <a>Stop</a>
             <Dropdown overlay={menu}>
@@ -69,41 +72,43 @@ const MyTable: React.FC = () => {
           </Space>
         ),
       },
-    ]
+    ];
 
-    const data = []
+    const data = [];
     for (let i = 0; i < 3; ++i) {
       data.push({
         key: i + 100,
         date: '2014-12-24 23:12:00',
         name: 'This is production name',
         upgradeNum: 'Upgraded: 56',
-      })
+      });
     }
-    return <Table columns={columns} dataSource={data} pagination={false} />
-  }
+    return <Table columns={columns} dataSource={data} pagination={false} />;
+  };
 
   const handleSearch = (
     selectedKeys: string[],
     confirm: (param?: FilterConfirmProps) => void,
     dataIndex: DataIndex,
   ) => {
-    confirm()
-    setSearchText(selectedKeys[0])
-    setSearchedColumn(dataIndex)
-  }
+    confirm();
+    setSearchText(selectedKeys[0]);
+    setSearchedColumn(dataIndex);
+  };
 
   const handleReset = (clearFilters: () => void) => {
-    clearFilters()
-    setSearchText('')
-  }
+    clearFilters();
+    setSearchText('');
+  };
 
-  const [searchText, setSearchText] = useState('')
-  const [searchedColumn, setSearchedColumn] = useState('')
-  const searchInput = useRef<InputRef>(null)
+  const [searchText, setSearchText] = useState('');
+  const [searchedColumn, setSearchedColumn] = useState('');
+  const searchInput = useRef<InputRef>(null);
 
   const getColumnSearchProps = (dataIndex: DataIndex): ColumnType<DataType> => ({
-    filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
+    filterDropdown: ({
+      setSelectedKeys, selectedKeys, confirm, clearFilters,
+    }) => (
       <div style={{ padding: 8 }}>
         <Input
           ref={searchInput}
@@ -115,28 +120,24 @@ const MyTable: React.FC = () => {
         />
         <Space>
           <Button
-            type='primary'
+            type="primary"
             onClick={() => handleSearch(selectedKeys as string[], confirm, dataIndex)}
             icon={<SearchOutlined />}
-            size='small'
+            size="small"
             style={{ width: 90 }}
           >
             Search
           </Button>
-          <Button
-            onClick={() => clearFilters && handleReset(clearFilters)}
-            size='small'
-            style={{ width: 90 }}
-          >
+          <Button onClick={() => clearFilters && handleReset(clearFilters)} size="small" style={{ width: 90 }}>
             Reset
           </Button>
           <Button
-            type='link'
-            size='small'
+            type="link"
+            size="small"
             onClick={() => {
-              confirm({ closeDropdown: false })
-              setSearchText((selectedKeys as string[])[0])
-              setSearchedColumn(dataIndex)
+              confirm({ closeDropdown: false });
+              setSearchText((selectedKeys as string[])[0]);
+              setSearchedColumn(dataIndex);
             }}
           >
             Filter
@@ -144,30 +145,26 @@ const MyTable: React.FC = () => {
         </Space>
       </div>
     ),
-    filterIcon: (filtered: boolean) => (
-      <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />
-    ),
-    onFilter: (value, record) =>
-      record[dataIndex]!.toString()
-        .toLowerCase()
-        .includes((value as string).toLowerCase()),
+    filterIcon: (filtered: boolean) => <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />,
+    onFilter: (value, record) => record[dataIndex]!.toString()
+      .toLowerCase()
+      .includes((value as string).toLowerCase()),
     onFilterDropdownVisibleChange: (visible) => {
       if (visible) {
-        setTimeout(() => searchInput.current?.select(), 100)
+        setTimeout(() => searchInput.current?.select(), 100);
       }
     },
-    render: (text) =>
-      searchedColumn === dataIndex ? (
+    render: (text) => searchedColumn === dataIndex ? (
         <Highlighter
           highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
           searchWords={[searchText]}
           autoEscape
           textToHighlight={text ? text.toString() : ''}
         />
-      ) : (
-        text
-      ),
-  })
+    ) : (
+      text
+    ),
+  });
 
   const columnsSeries: ColumnsType<DataType> = [
     {
@@ -199,7 +196,7 @@ const MyTable: React.FC = () => {
       render: (dataIndex) => (
         <div style={{ width: '85%' }}>
           <Progress
-            size='small'
+            size="small"
             strokeColor={{
               '0%': '#108ee9',
               '100%': '#87d068',
@@ -209,7 +206,7 @@ const MyTable: React.FC = () => {
         </div>
       ),
     },
-  ]
+  ];
 
   const columns: ColumnsType<DataType> = [
     {
@@ -234,7 +231,7 @@ const MyTable: React.FC = () => {
       render: (dataIndex) => (
         <div style={{ width: '85%' }}>
           <Progress
-            size='small'
+            size="small"
             strokeColor={{
               '0%': '#108ee9',
               '100%': '#87d068',
@@ -244,7 +241,7 @@ const MyTable: React.FC = () => {
         </div>
       ),
     },
-  ]
+  ];
 
   return (
     <div>
@@ -261,16 +258,11 @@ const MyTable: React.FC = () => {
         </div>
       ) : (
         <div style={{ marginTop: 25 }}>
-          <Table
-            bordered={false}
-            columns={columns}
-            dataSource={true ? tableData : []}
-            size={'small'}
-          />
+          <Table bordered={false} columns={columns} dataSource={true ? tableData : []} size={'small'} />
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default MyTable
+export default MyTable;

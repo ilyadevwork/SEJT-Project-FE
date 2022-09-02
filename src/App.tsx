@@ -1,11 +1,11 @@
-import { Layout, Space, Button, Col, Row } from 'antd';
+import { Layout, Col, Row } from 'antd';
 import './App.css';
 import Chart from './components/chart';
 import Selection from './components/selector';
 import DatePicker from './components/datePicker';
 import Table from './components/table';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Content } = Layout;
 
 const App = () => {
   return (
@@ -31,6 +31,6 @@ const App = () => {
       </Content>
     </Layout>
   );
-}
+};
 
 export default App;
