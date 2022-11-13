@@ -1,9 +1,10 @@
 import { DatePicker, Space, Switch } from 'antd';
 import moment from 'moment';
 import React from 'react';
-import { stateStore, disabledDate, initalDate } from '../store/state';
-import type { DatePickerProps, RangePickerProps } from 'antd/es/date-picker';
+import type { RangePickerProps } from 'antd/es/date-picker';
+import { stateStore } from '../store/state';
 import { toggleActionType, dataActionType } from '../types/actionTypes';
+import { disabledDate, initalDate } from '../util/util';
 
 const { RangePicker } = DatePicker;
 
@@ -12,20 +13,19 @@ const MyDatePicker: React.FC = () => {
   const dataActionDispatch = stateStore((state) => state.dataDispatch);
   const isSeries = stateStore((state) => state.isSeries);
 
-  const onChange = (
-    value: DatePickerProps['value'] | RangePickerProps['value'],
-    dateString: [string, string] | string,
-  ) => {
-    if (!isSeries) {
-      if (value !== null) dataActionDispatch({
-        type: dataActionType.SET_DATE,
-        payload: [moment(dateString), moment(dateString)],
-      });
-    } else {
-      if (value !== null) dataActionDispatch({
-        type: dataActionType.SET_DATE,
-        payload: [moment(dateString[0]), moment(dateString[1])],
-      });
+  const onChange = (value: moment.Moment | RangePickerProps['value'], dateString: [string, string] | string) => {
+    if (value !== null) {
+      if (!isSeries) {
+        dataActionDispatch({
+          type: dataActionType.SET_DATE,
+          payload: [moment(dateString), moment(dateString)],
+        });
+      } else {
+        dataActionDispatch({
+          type: dataActionType.SET_DATE,
+          payload: [moment(dateString[0]), moment(dateString[1])],
+        });
+      }
     }
   };
 
@@ -36,11 +36,11 @@ const MyDatePicker: React.FC = () => {
         checkedChildren="Series"
         unCheckedChildren="Series"
         onChange={(value) => toggleActionDispatch({ type: toggleActionType.TOGGLE_SERIES, payload: value })}
-      ></Switch>
+      />
       {isSeries ? (
         <RangePicker
           allowClear={false}
-          size={'small'}
+          size="small"
           disabledDate={disabledDate}
           defaultValue={initalDate}
           defaultPickerValue={initalDate}
@@ -50,9 +50,9 @@ const MyDatePicker: React.FC = () => {
       ) : (
         <DatePicker
           onChange={onChange}
-          defaultPickerValue={initalDate![0]}
-          defaultValue={initalDate![0]}
-          size={'small'}
+          defaultPickerValue={initalDate[0]}
+          defaultValue={initalDate[0]}
+          size="small"
           allowClear={false}
           disabledDate={disabledDate}
           bordered={false}

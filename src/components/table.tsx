@@ -1,7 +1,5 @@
 import { DownOutlined, SearchOutlined } from '@ant-design/icons';
-import {
-  Badge, Button, Dropdown, Input, Menu, Progress, Select, Space, Table,
-} from 'antd';
+import { Badge, Button, Dropdown, Input, Menu, Progress, Select, Space, Table } from 'antd';
 import React, { useRef, useState } from 'react';
 import Highlighter from 'react-highlight-words';
 import type { ColumnsType, ColumnType } from 'antd/lib/table';
@@ -106,9 +104,7 @@ const MyTable: React.FC = () => {
   const searchInput = useRef<InputRef>(null);
 
   const getColumnSearchProps = (dataIndex: DataIndex): ColumnType<DataType> => ({
-    filterDropdown: ({
-      setSelectedKeys, selectedKeys, confirm, clearFilters,
-    }) => (
+    filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
       <div style={{ padding: 8 }}>
         <Input
           ref={searchInput}
@@ -146,24 +142,26 @@ const MyTable: React.FC = () => {
       </div>
     ),
     filterIcon: (filtered: boolean) => <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />,
-    onFilter: (value, record) => record[dataIndex]!.toString()
-      .toLowerCase()
-      .includes((value as string).toLowerCase()),
+    onFilter: (value, record) =>
+      record[dataIndex]!.toString()
+        .toLowerCase()
+        .includes((value as string).toLowerCase()),
     onFilterDropdownVisibleChange: (visible) => {
       if (visible) {
         setTimeout(() => searchInput.current?.select(), 100);
       }
     },
-    render: (text) => searchedColumn === dataIndex ? (
+    render: (text) =>
+      searchedColumn === dataIndex ? (
         <Highlighter
           highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
           searchWords={[searchText]}
           autoEscape
           textToHighlight={text ? text.toString() : ''}
         />
-    ) : (
-      text
-    ),
+      ) : (
+        text
+      ),
   });
 
   const columnsSeries: ColumnsType<DataType> = [

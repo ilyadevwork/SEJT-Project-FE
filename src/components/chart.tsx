@@ -7,6 +7,7 @@ const Chart: React.FC = () => {
   const category = stateStore((state) => state.category);
   const aggregate = stateStore((state) => state.isAggregate);
 
-  return category !== 'salaryEst' && aggregate == true ? <Line {...chartData} /> : <Column {...chartData} />;
+  /* eslint-disable */ 
+  return category !== 'salaryEst' && aggregate === true ? <Line {...chartData} /> : <Column {...chartData} />;
 };
 export default Chart;
